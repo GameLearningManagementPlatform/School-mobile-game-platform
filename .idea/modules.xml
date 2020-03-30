@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/php_heroku_github_bootstrap.iml" filepath="$PROJECT_DIR$/.idea/php_heroku_github_bootstrap.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/php-Game-tracker-master.iml" filepath="$PROJECT_DIR$/.idea/php-Game-tracker-master.iml" />
     </modules>
   </component>
 </project>
