@@ -14,3 +14,24 @@ background-color: #04204e !important;
 .navbar-dark .navbar-nav .nav-item{
     margin: 0 15px;
 }
+h1{
+    text-align: center;
+}
+html,body
+{
+    height:100%;
+}
+
+#wrap
+{
+    min-height: 100%;
+}
+
+#main
+{
+    overflow:auto;
+    padding-bottom:50px; /* this needs to be bigger than footer height*/
+}
+
+
+
