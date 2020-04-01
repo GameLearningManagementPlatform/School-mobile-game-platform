@@ -4,7 +4,7 @@
         <div class="col-sm-6 col-md-4 footer-navigation">
             <h3><a href="#">School Mobile Games&nbsp;</a></h3>
             <p class="links"><a href="#">Home</a><strong> · </strong><a href="#">Blog</a><strong> · </strong><a href="#">Pricing</a><strong> · </strong><a href="#">About</a><strong> · </strong><a href="#">Faq</a><strong> · </strong><a href="#">Contact</a></p>
-            <p class="company-name">SGM Incs © 2020</p>
+            <p class="company-name">SGM Incs © <?php echo date("Y");?></p>
         </div>
         <div class="col-sm-6 col-md-4 footer-contacts">
             <div><span class="fa fa-map-marker footer-contacts-icon"> </span>
@@ -31,6 +31,7 @@
         </div>
     </div>
 </footer>
+
 
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->

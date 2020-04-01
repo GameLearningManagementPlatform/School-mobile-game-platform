@@ -19,12 +19,12 @@
                 class="collapse navbar-collapse" id="navcol-1">
             <ul class="nav navbar-nav ml-auto">
                 <li class="nav-item" role="presentation"><a class="nav-link active" href="/games.php">Games</a></li>
-                <li class="nav-item" role="presentation"><a class="nav-link" href="login/login.php">Login</a></li>
-                <li class="nav-item" role="presentation"><a class="nav-link" href="registraion/register.php">Sign Up</a></li>
-                <li class="nav-item" role="presentation"><a class="nav-link" href="/contact.php">Contact us</a></li>
+                <li class="nav-item" role="presentation"><a class="nav-link" href="login.php">Login</a></li>
+                <li class="nav-item" role="presentation"><a class="nav-link" href="registrationForm.php">Sign Up</a></li>
+                <li class="nav-item" role="presentation"><a class="nav-link" href="contact.php">Contact us</a></li>
             </ul>
         </div>
-    </div>
+
 </nav>
 <div id="promo">
     <div class="jumbotron">
@@ -90,6 +90,7 @@
     </div>
 </div>
 
-
+<div class=" site-footer">
 <?php require  'includes/footer.php'?>
 
+</div>
