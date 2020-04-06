@@ -32,4 +32,11 @@ class crud{
             echo $e->getMessage();
             return false;
         }
-    }}
+    }
+    public function getSchoolManager_SchoolAdmin(){
+        $query = 'SELECT * FROM `schooladmin_schoolmanager`  ';
+        $result = $this->db->query($query);
+        return $result;
+    }
+
+}

@@ -22,11 +22,11 @@
 
 <body id="register">
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container"><a class="navbar-brand" href="/index.php"><strong>School Game Management</strong></a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+    <div class="container "><a class="navbar-brand" href="/index.php"><strong>School Game Management </strong></a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
         <div
             class="collapse navbar-collapse" id="navcol-1">
             <ul class="nav navbar-nav ml-auto">
-                <li class="nav-item" role="presentation"><a class="nav-link active" href="/games.php">Games</a></li>
+                <li class="nav-item" role="presentation"><a class="nav-link active" href="/Displaygames.php">Games</a></li>
                 <li class="nav-item" role="presentation"><a class="nav-link" href="/login.php">Dashboard</a></li>
 
                 <li class="nav-item dropdown"  role="presentation">
@@ -43,15 +43,15 @@
                     </div>
                 </li>
                 <li class="nav-item" role="presentation"><a class="nav-link" href="/aboutus.php">About Us </a></li>
-                <li class="nav-item" role="presentation"><a class="nav-link" href="/contact.php">Contact us</a></li>
+                <li class="nav-item" role="presentation"><a class="nav-link" href="/contacts.php">Contact us</a></li>
             </ul>
         </div>
 
 </nav>
 <div id="promo">
     <div class="jumbotron">
-        <h1>Learning made simple&nbsp;</h1>
-        <p>Ready to improve your learning skills by playing games. Whola! We offer best curriculum-based games and track your performce. Ready? Play!</p>
-        <p><a class="btn btn-primary" role="button">Learn more</a></p>
+        <h1>Play mobile games to improve your skills in school&nbsp;</h1>
+        <p>Welcome to the world of games. Let your students play as you track their progress. Let them compete and have more fun  </p>
+
     </div>
 </div>

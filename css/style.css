@@ -4,7 +4,7 @@ background-color: #04204e !important;
 .navbar-brand{
     font-weight: bold;
     font-family: monospace;
-    font-size: 28px;
+    font-size: 20px;
 }
 .navbar-dark .navbar-nav .nav-link{
     font-weight: 700;
@@ -32,6 +32,8 @@ html,body
     overflow:auto;
     padding-bottom:50px; /* this needs to be bigger than footer height*/
 }
+.home a p {display:none;}
+.home a:hover {display:block;}
 
 
 
