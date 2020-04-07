@@ -1,4 +1,50 @@
 <?php
 $title = 'Registration of   students';
 require 'includes/header.php'; ?>
+
+    <div id="wrap">
+        <div id="main" class="container clear-top">
+            <h1>Registration for the school</h1>
+            <form method="post" action="success.php">
+                <div class="form-group">
+                    <label for="firstname">First Name</label>
+                    <input type="text" class="form-control" id="firstname" name="firstname">
+                </div>
+                <div class="form-group">
+                    <label for="secondname">Second Name</label>
+                    <input type="text" class="form-control" id="secondname" name="secondname">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email address</label>
+                    <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp">
+                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                        else.</small>
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Password</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1" name="password">
+                </div>
+                <div class="form-group">
+                    <label for="teacherSubject">What is the class  level of the student in school (Choose from list)</label>
+                    <select class="form-control" id="role" name="role">
+                        <option>Grade 1</option>
+                        <option>Grade 2</option>
+                        <option>Grade 3</option>
+                        <option>Grade 4</option>
+                        <option>Grade 5</option>
+                        <option>Grade 6</option>
+                        <option>Grade 7</option>
+                        <option>Grade 8</option>
+                        <option>Grade 9</option>
+                        <option>Grade 10</option>
+                        <option>Grade 11</option>
+                        <option>Grade 12</option>
+                    </select>
+                </div>
+                <button type="submit" name="submit" class="btn btn-primary btn-block">Submit</button>
+            </form>
+        </div>
+    </div>
+
+
 <?php require 'includes/footer.php' ?>

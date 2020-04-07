@@ -2,10 +2,13 @@
 
 $title = 'view users';
 require 'includes/header.php';
+require 'database/conn.php';
+$result = $crud->getSchoolManager_SchoolAdmin();
 ?>
-    <table class="table">
-        <thead>
+    <table class="table container">
+        <thead class="thead-dark">
         <tr>
+            <th> ID</th>
             <th>firstname</th>
             <th>secondname</th>
             <th>role</th>
@@ -13,11 +16,11 @@ require 'includes/header.php';
             <th>password</th>
             <th>phonenumber</th>
             <th>schoolname</th>
+            <th>edit</th>
+            <th>delete</th>
         </tr>
         </thead>
-
-        <?php
-        while($row = $result->fetch_assoc()): ?>
+        <?php while($row = $result->fetch(PDO::FETCH_ASSOC)): ?>
             <tr>
                 <td> <?php echo  $row['user_id'];?></td>
                 <td> <?php echo  $row['firstname'];?></td>
@@ -27,14 +30,8 @@ require 'includes/header.php';
                 <td> <?php echo  $row['password'];?></td>
                 <td> <?php echo  $row['phonenumber'];?></td>
                 <td> <?php echo  $row['schoolname'];?></td>
-
-                <td>
-
-                    <a href="create.php?edit=<?php echo  $row['id'];?>"
-                       class="btn btn-info">edit</a>
-                    <a href="process.php?delete=<?php echo  $row['id'];?>"
-                       class="btn btn-danger">delete</a>
-                </td>
+                <td><a href="create.php?edit=<?php echo  $row['id'];?>" class="btn btn-info">edit</a> </td>
+                <td><a href="process.php?delete=<?php echo  $row['id'];?>" class="btn btn-danger">delete</a></td>
             </tr>
         <?php endwhile;?>
     </table>

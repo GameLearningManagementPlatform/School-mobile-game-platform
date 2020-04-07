@@ -2,21 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9313587e-543b-4675-af75-c132ba7c2fbc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/schoolManagerSchoolAdminDashboard.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/schoolStudentDashboard.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/schoolStudentRegistration.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/schoolTeacherDashboard.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/schoolTeacherRegistration.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/viewUsers.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/schoolTeacherViewUsers.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/contact.php" beforeDir="false" afterPath="$PROJECT_DIR$/contacts.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/managercrud.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/managercrud.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/games.php" beforeDir="false" afterPath="$PROJECT_DIR$/Displaygames.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/includes/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/header.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/login.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/registrationForm.php" beforeDir="false" afterPath="$PROJECT_DIR$/schoolManager_SchoolAdmin_registration.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/schoolManager_SchoolAdmin_registration.php" beforeDir="false" afterPath="$PROJECT_DIR$/schoolManagerSchoolAdminregistration.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/schoolStudentRegistration.php" beforeDir="false" afterPath="$PROJECT_DIR$/schoolStudentRegistration.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/schoolTeacherRegistration.php" beforeDir="false" afterPath="$PROJECT_DIR$/schoolTeacherRegistration.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/viewUsers.php" beforeDir="false" afterPath="$PROJECT_DIR$/schoolManagerSchoolAdminViewUsers.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -84,7 +76,7 @@
       <updated>1585576033166</updated>
       <workItem from="1585576036099" duration="20647000" />
       <workItem from="1585703037962" duration="11467000" />
-      <workItem from="1585882120821" duration="42469000" />
+      <workItem from="1585882120821" duration="49049000" />
     </task>
     <servers />
   </component>

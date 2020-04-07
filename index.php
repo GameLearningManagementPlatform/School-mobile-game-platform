@@ -28,7 +28,7 @@ $title = 'Home_page';
                 </li>
                 <li class="nav-item" role="presentation"><a class="nav-link" href="login.php">Login</a></li>
                 <li class="nav-item" role="presentation"><a class="nav-link"
-                                                            href="schoolManager_SchoolAdmin_registration.php">Sign
+                                                            href="schoolManagerSchoolAdminregistration.php">Sign
                         Up</a></li>
                 <li class="nav-item" role="presentation"><a class="nav-link" href="contacts.php">Contact us</a></li>
             </ul>
