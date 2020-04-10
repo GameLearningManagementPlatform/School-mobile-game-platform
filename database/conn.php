@@ -1,6 +1,6 @@
 <?php
 $host = '127.0.0.1';
-$db = 'game_learning_management_platform';
+$db = 'gmlp';
 $username = 'root';
 $pass = '';
 $charset = 'utf8mb4';

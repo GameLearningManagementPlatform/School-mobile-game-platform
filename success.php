@@ -59,7 +59,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         <p class="card-text">Email:<?php echo $_POST['email']; ?></p>
         <p class="card-text">Password:<?php echo $_POST['password']; ?></p>
         <p class="card-text">Phone Number:<?php echo $_POST['phonenumber']; ?></p>
-        <p class="card-text">School Name:<?php echo $_POST['schoolname']; ?></p>
+
 
         <a href="/login.php" class="card-link">Login Here</a>
     </div>
