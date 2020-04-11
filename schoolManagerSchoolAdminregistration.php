@@ -25,9 +25,13 @@ require_once 'database/conn.php';
             <h1>Registration for the school</h1>
 
             <strong>
-                <p style="color: red">Please adhere to our terms and conditions. This form is to be filled by the <em>school
-                        administrator or school manager </em>to register their school.
-                </p>
+                <div class="p-3 mb-2 bg-warning text-dark">
+                    <p >Please adhere to our terms and conditions. This form is to be filled by the school
+                        administrator or school manager to register their school.
+                    </p>
+                </div>
+
+
             </strong>
             <form method="post" action="success.php">
                 <div class="form-group">

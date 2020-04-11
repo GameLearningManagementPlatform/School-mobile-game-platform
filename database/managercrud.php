@@ -57,4 +57,19 @@ class crud{
 
     }
 
+    public function getManager_Admin($id){
+        try{
+            $sql = "select * from schooladmin_schoolmanager a inner join school_list s on a.school_id = s.school_id 
+                where 	user_id = :id";
+            $stmt = $this->db->prepare($sql);
+            $stmt->bindparam(':id', $id);
+            $stmt->execute();
+            $result = $stmt->fetch();
+            return $result;
+        }catch (PDOException $e) {
+            echo $e->getMessage();
+            return false;
+        }
+    }
+
 }

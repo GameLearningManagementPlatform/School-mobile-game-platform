@@ -45,7 +45,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     if ($isSuccess) {
         echo '<h1 class="text-center text-success">You have been registered successfully</h1><br>
-                <h3 class="text-secondary">Please confirm your email before login</h3>';
+
+                <h3 class="p-3 mb-2 bg-success text-white">Please confirm your email before login</h3>';
     } else {
         echo '<h1 class="text-center text-danger">Registration was unsuccessful</h1>';
     }
