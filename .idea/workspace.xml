@@ -2,13 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9313587e-543b-4675-af75-c132ba7c2fbc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/PlatformAdmin-DeleteUser.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PlatformAdmin-EditUser.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PlatformAdmin-ViewUser.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PlatformAdmin-EditPost.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlatformAdmin-EditUser.php" beforeDir="false" afterPath="$PROJECT_DIR$/PlatformAdmin-EditUser.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlatformAdmin-ViewUser.php" beforeDir="false" afterPath="$PROJECT_DIR$/PlatformAdmin-ViewUser.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/managercrud.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/managercrud.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/schoolManagerSchoolAdminViewUsers.php" beforeDir="false" afterPath="$PROJECT_DIR$/schoolManagerSchoolAdminViewUsers.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/schoolManagerSchoolAdminregistration.php" beforeDir="false" afterPath="$PROJECT_DIR$/schoolManagerSchoolAdminregistration.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/success.php" beforeDir="false" afterPath="$PROJECT_DIR$/success.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -39,17 +39,19 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/SchoolAdmin_SchoolManager" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.import" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\dell\Desktop\php-Game-tracker-master\css" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\dell\Desktop\php-Game-tracker-master\School-mobile-game-platform\SchoolAdmin_SchoolManager" />
+      <recent name="C:\Users\dell\Desktop\php-Game-tracker-master\School-mobile-game-platform\schoolAdmin_SchoolManager" />
       <recent name="C:\Users\dell\Desktop\php-Game-tracker-master" />
       <recent name="C:\Users\dell\Desktop\php-Game-tracker-master\includes" />
+      <recent name="C:\Users\dell\Desktop\php-Game-tracker-master\css" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\dell\Desktop\php-Game-tracker-master\css" />
     </key>
   </component>
@@ -78,7 +80,7 @@
       <workItem from="1585576036099" duration="20647000" />
       <workItem from="1585703037962" duration="11467000" />
       <workItem from="1585882120821" duration="52937000" />
-      <workItem from="1586487932299" duration="26621000" />
+      <workItem from="1586487932299" duration="51406000" />
     </task>
     <servers />
   </component>

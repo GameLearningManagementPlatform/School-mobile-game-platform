@@ -3,13 +3,15 @@ $title = 'view users';
 $id = '';
 require_once 'includes/header.php';
 require_once 'database/conn.php';
-if (isset($_GET['view'])){
-    $id = $_GET['view'];
-    $result = $crud->getManager_Admin($id);
+if (!isset($_GET['id'])){
+    //check for the error first
+    echo '<h1 class="text-danger">User doesnt exist</h1>';
+
 
 } else {
-    echo '<h1 class="text-danger">User doesnt exist</h1>';
-}
+    $id = $_GET['id'];
+    $result = $crud->getManager_Admin($id);
+
     ?>
     <div class="card" style="width: 18rem;">
         <div class="card-body">
@@ -22,9 +24,9 @@ if (isset($_GET['view'])){
             <p class="card-text">School Name:<?php echo $result['schoolname']; ?></p>
             <p class="card-text">School Address:<?php echo $result['schooladdress']; ?></p>
             <p>
-                <a href="PlatformAdmin-EditUser.php" class="card-link">Edit User</a>
-                <a href="PlatformAdmin-DeleteUser.php" class="card-link">Delete  User</a>
+                <a href="schoolManagerSchoolAdminViewUsers.php" class="card-link">Return back to List</a>
             </p>
         </div>
     </div>
+    <?php } ?>
 <?php include 'includes/footer.php'; ?>

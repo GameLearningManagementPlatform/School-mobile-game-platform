@@ -5,6 +5,11 @@ require_once 'database/conn.php';
 
 //save data into database
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+    if (isset($_POST['user_id'])) {
+        $id = $_POST['user_id'];
+    } else {
+        $id = 'A user without ID';
+    }
     if (isset($_POST['firstname'])) {
         $firstname = $_POST['firstname'];
     } else {

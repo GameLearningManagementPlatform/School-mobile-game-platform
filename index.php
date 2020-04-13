@@ -40,6 +40,7 @@ $title = 'Home_page';
         <h1>Learning made simple&nbsp;</h1>
         <p>Ready to improve your learning skills by playing games. Whola! We offer best curriculum-based games and track
             your performce. Ready? Play!</p>
+        <iframe width="760" height="415" src="https://www.youtube.com/embed/d9fTy-tecEY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         <p><a class="btn btn-primary" role="button">Learn more</a></p>
     </div>
 </div>

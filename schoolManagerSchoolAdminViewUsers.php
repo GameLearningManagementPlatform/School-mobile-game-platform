@@ -3,8 +3,6 @@
 $title = 'view users';
 require 'includes/header.php';
 require 'database/conn.php';
-
-
 $result = $crud->getSchoolManager_SchoolAdmin();
 ?>
     <table class="table container">
@@ -33,9 +31,9 @@ $result = $crud->getSchoolManager_SchoolAdmin();
                 <td> <?php echo  $row['password'];?></td>
                 <td> <?php echo  $row['phonenumber'];?></td>
                 <td> <?php echo  $row['schoolname'];?></td>
-                <td><a href="PlatformAdmin-ViewUser.php?view=<?php echo  $row['user_id'];?>" class="btn btn-primary">edit</a></td>
-                <td><a href="PlatformAdmin-EditUser.php" class="btn btn-info">edit</a> </td>
-                <td><a href="PlatformAdmin-DeleteUser.php" class="btn btn-danger">delete</a> </td>
+                    <td><a href="PlatformAdmin-ViewUser.php?id=<?php echo  $row['user_id'];?>" class="btn btn-primary">View</a></td>
+                <td><a href="PlatformAdmin-EditUser.php?id=<?php echo  $row['user_id'];?>" class="btn btn-info">Edit</a></td>
+                <td><a href="PlatformAdmin-DeleteUser.php?delete=<?php echo  $row['user_id'];?>" class="btn btn-danger">Delete</a></td>
             </tr>
 
         <?php endwhile;?>
