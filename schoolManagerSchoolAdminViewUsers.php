@@ -21,22 +21,25 @@ $result = $crud->getSchoolManager_SchoolAdmin();
             <th>delete</th>
         </tr>
         </thead>
-        <?php while($row = $result->fetch(PDO::FETCH_ASSOC)): ?>
+        <?php while ($row = $result->fetch(PDO::FETCH_ASSOC)): ?>
             <tr>
-                <td> <?php echo  $row['user_id'];?></td>
-                <td> <?php echo  $row['firstname'];?></td>
-                <td> <?php echo  $row['secondname'];?></td>
-                <td> <?php echo  $row['role'];?></td>
-                <td> <?php echo  $row['email'];?></td>
-                <td> <?php echo  $row['password'];?></td>
-                <td> <?php echo  $row['phonenumber'];?></td>
-                <td> <?php echo  $row['schoolname'];?></td>
-                    <td><a href="PlatformAdmin-ViewUser.php?id=<?php echo  $row['user_id'];?>" class="btn btn-primary">View</a></td>
-                <td><a href="PlatformAdmin-EditUser.php?id=<?php echo  $row['user_id'];?>" class="btn btn-info">Edit</a></td>
-                <td><a href="PlatformAdmin-DeleteUser.php?delete=<?php echo  $row['user_id'];?>" class="btn btn-danger">Delete</a></td>
+                <td> <?php echo $row['user_id']; ?></td>
+                <td> <?php echo $row['firstname']; ?></td>
+                <td> <?php echo $row['secondname']; ?></td>
+                <td> <?php echo $row['role']; ?></td>
+                <td> <?php echo $row['email']; ?></td>
+                <td> <?php echo $row['password']; ?></td>
+                <td> <?php echo $row['phonenumber']; ?></td>
+                <td> <?php echo $row['schoolname']; ?></td>
+                <td><a href="PlatformAdmin-ViewUser.php?id=<?php echo $row['user_id']; ?>"
+                       class="btn btn-primary">View</a></td>
+                <td><a href="PlatformAdmin-EditUser.php?id=<?php echo $row['user_id']; ?>" class="btn btn-info">Edit</a>
+                </td>
+                <td><a onclick="return confirm('Are you sure you want to delete this record?');" href="PlatformAdmin-DeleteUser.php?id=<?php echo $row['user_id']; ?>" class="btn btn-danger">Delete</a>
+                </td>
             </tr>
 
-        <?php endwhile;?>
+        <?php endwhile; ?>
     </table>
 
 <?php require 'includes/footer.php' ?>

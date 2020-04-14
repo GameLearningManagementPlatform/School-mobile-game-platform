@@ -108,4 +108,19 @@ class crud
         }
     }
 
+    public function deleteSchoolAdmin_SchoolManager($id){
+        try {
+            $sql = 'DELETE FROM `schooladmin_schoolmanager` WHERE user_id = :id ';
+            //prepare the sql statement for execution
+            $pdo = $this->db->prepare($sql);
+            // bind all placeholders to the actual values
+            $pdo->bindparam(':id', $id);
+            $pdo->execute();
+            return true;
+        }catch (PDOException $exception){
+            echo $exception->getMessage();
+            return false;
+        }
+    }
+
 }

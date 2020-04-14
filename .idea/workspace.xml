@@ -2,14 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9313587e-543b-4675-af75-c132ba7c2fbc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/PlatformAdmin-EditPost.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PlatformAdmin-EditUser.php" beforeDir="false" afterPath="$PROJECT_DIR$/PlatformAdmin-EditUser.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PlatformAdmin-ViewUser.php" beforeDir="false" afterPath="$PROJECT_DIR$/PlatformAdmin-ViewUser.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlatformAdmin-DeleteUser.php" beforeDir="false" afterPath="$PROJECT_DIR$/PlatformAdmin-DeleteUser.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/managercrud.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/managercrud.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/schoolManagerSchoolAdminViewUsers.php" beforeDir="false" afterPath="$PROJECT_DIR$/schoolManagerSchoolAdminViewUsers.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/success.php" beforeDir="false" afterPath="$PROJECT_DIR$/success.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -81,6 +77,7 @@
       <workItem from="1585703037962" duration="11467000" />
       <workItem from="1585882120821" duration="52937000" />
       <workItem from="1586487932299" duration="51406000" />
+      <workItem from="1586847944628" duration="3199000" />
     </task>
     <servers />
   </component>
