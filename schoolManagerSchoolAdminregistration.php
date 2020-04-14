@@ -36,11 +36,11 @@ require_once 'database/conn.php';
             <form method="post" action="success.php">
                 <div class="form-group">
                     <label for="firstname">First Name</label>
-                    <input type="text" class="form-control" id="firstname" name="firstname">
+                    <input required type="text" class="form-control" id="firstname" name="firstname">
                 </div>
                 <div class="form-group">
                     <label for="secondname">Second Name</label>
-                    <input type="text" class="form-control" id="secondname" name="secondname">
+                    <input required type="text" class="form-control" id="secondname" name="secondname">
                 </div>
                 <div class="form-group">
                     <label for="role">What is your role in school (Choose from list)</label>
@@ -51,13 +51,13 @@ require_once 'database/conn.php';
                 </div>
                 <div class="form-group">
                     <label for="email">Email address</label>
-                    <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp">
+                    <input required type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp">
                     <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
                         else.</small>
                 </div>
                 <div class="form-group">
                     <label for="exampleInputPassword1">Password</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1" name="password">
+                    <input required type="password" class="form-control" id="exampleInputPassword1" name="password">
                 </div>
                 <div class="form-group">
                     <label for="phonenumber"> Contact Number</label>

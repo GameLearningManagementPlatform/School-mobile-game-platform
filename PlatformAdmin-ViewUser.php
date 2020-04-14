@@ -3,7 +3,7 @@ $title = 'view users';
 $id = '';
 require_once 'includes/header.php';
 require_once 'database/conn.php';
-if (!isset($_GET['id'])){
+if (!isset($_GET['id'])) {
     //check for the error first
     echo '<h1 class="text-danger">User doesnt exist</h1>';
 
@@ -24,9 +24,17 @@ if (!isset($_GET['id'])){
             <p class="card-text">School Name:<?php echo $result['schoolname']; ?></p>
             <p class="card-text">School Address:<?php echo $result['schooladdress']; ?></p>
             <p>
-                <a href="schoolManagerSchoolAdminViewUsers.php" class="card-link">Return back to List</a>
+                <a href="schoolManagerSchoolAdminViewUsers.php?id=<?php echo $result['user_id']; ?>"
+                   class="btn btn-primary"> Users</a>
+                <a href="PlatformAdmin-EditUser.php?id=<?php echo $result['user_id']; ?>" class="btn btn-info">Edit</a>
+
+                <a onclick="return confirm('Are you sure you want to delete this record?');"
+                   href="PlatformAdmin-DeleteUser.php?id=<?php echo $result['user_id']; ?>"
+                   class="btn btn-danger">Delete</a>
             </p>
+
+
         </div>
     </div>
-    <?php } ?>
+<?php } ?>
 <?php include 'includes/footer.php'; ?>
