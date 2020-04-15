@@ -1,7 +1,7 @@
 <?php
 $title = 'School-registration';
 require 'includes/header.php';
-require_once 'database/conn.php';
+//require_once 'database/conn.php';
 ?>
 
     <!--
