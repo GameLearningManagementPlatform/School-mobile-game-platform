@@ -1,7 +1,7 @@
 <?php
 $title = 'School-registration';
 require 'includes/header.php';
-//require_once 'database/conn.php';
+require 'database/conn.php';
 ?>
 
     <!--
@@ -17,6 +17,8 @@ require 'includes/header.php';
             //on sign up and login authentication.
             -Add teachers
             -Add Students
+
+
 
 
     -->
@@ -68,7 +70,7 @@ require 'includes/header.php';
                 <div class="form-group">
                     <label for="schoolname">School name (Choose from list)</label>
                     <select class="form-control" id="schoolname" name="schoolname">
-                        < <?php $results =$crud->getSchoolName();
+                         <?php $results =$crud->getSchoolName();
                         while($r = $results->fetch(PDO::FETCH_ASSOC)) {?>
                             <option value="<?php echo $r['school_id'] ?>"><?php echo $r['schoolname']; ?></option>
                         <?php }?>
