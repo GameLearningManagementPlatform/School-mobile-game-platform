@@ -1,7 +1,6 @@
 <?php
 $title = 'School-registration';
 require 'includes/header.php';
-require 'database/conn.php';
 ?>
 
     <!--
@@ -70,7 +69,10 @@ require 'database/conn.php';
                 <div class="form-group">
                     <label for="schoolname">School name (Choose from list)</label>
                     <select class="form-control" id="schoolname" name="schoolname">
-                         <?php $results =$crud->getSchoolName();
+                         <?php
+                         require 'database/conn.php';
+
+                         $results =$crud->getSchoolName();
                         while($r = $results->fetch(PDO::FETCH_ASSOC)) {?>
                             <option value="<?php echo $r['school_id'] ?>"><?php echo $r['schoolname']; ?></option>
                         <?php }?>
