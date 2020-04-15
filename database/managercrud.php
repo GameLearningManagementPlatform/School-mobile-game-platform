@@ -15,7 +15,7 @@ class crud
     {
         try {
             // define sql statement to be executed
-            $sql = "INSERT into 9IJXQTlBFn.schooladmin_schoolmanager(firstname, secondname,role, email,password,phonenumber,school_id ) VALUES (:firstname, :secondname, :role, :email, 
+            $sql = "INSERT into schooladmin_schoolmanager(firstname, secondname,role, email,password,phonenumber,school_id ) VALUES (:firstname, :secondname, :role, :email, 
             :password, :phonenumber, :schoolname)";
             //prepare the sql statement for execution
             $pdo = $this->db->prepare($sql);
