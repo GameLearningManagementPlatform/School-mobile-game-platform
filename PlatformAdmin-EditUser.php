@@ -9,6 +9,8 @@ $phonenumber = '';
 $schoolname = '';
 $title = 'Edit User';
 require 'includes/header.php';
+require_once 'includes/auth_check.php';
+
 require_once 'database/conn.php';
 if (!isset($_GET['id'])) {
     echo '<h1>User unavailable</h1>';

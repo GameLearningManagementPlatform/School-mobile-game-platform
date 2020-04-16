@@ -1,4 +1,7 @@
-<?php require_once 'database/conn.php';
+<?php
+require_once 'includes/auth_check.php';
+
+require_once 'database/conn.php';
 if (!$_GET['id']){
     echo 'error';
 }else{

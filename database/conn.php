@@ -14,17 +14,20 @@ $pass = ' 2947a474';
 $charset = 'utf8mb4';*/
 
 $dsn = "mysql:host=$host;dbname=$db;charset=$charset";
-try{
+try {
     $pdo = new PDO($dsn, $username, $pass);
     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-}
-catch(PDOException $e) {
+} catch (PDOException $e) {
     throw new PDOException($e->getMessage());
 }
-require  'managercrud.php';
+require 'userCrud.php';
+require_once 'user_authentication.php';
 $crud = new crud($pdo);
+$user_authentication = new user_authentication($pdo);
 
+//te first users to be loaded
+$user_authentication->insertUser("admin", "password");
 ?>
 
 

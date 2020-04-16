@@ -1,3 +1,7 @@
+<?php
+//all pages will have a session directly required from the header and no need to keep repeating on all page]
+require_once 'session.php';
+?>
 <!DOCTYPE html>
 <html>
 
@@ -27,24 +31,37 @@
             class="collapse navbar-collapse" id="navcol-1">
             <ul class="nav navbar-nav ml-auto">
                 <li class="nav-item" role="presentation"><a class="nav-link active" href="/Displaygames.php">Games</a></li>
-                <li class="nav-item" role="presentation"><a class="nav-link" href="/login.php">Dashboard</a></li>
 
                 <li class="nav-item dropdown"  role="presentation">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Services
+                        My Dashboard
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Projects</a>
-                        <a class="dropdown-item" href="#">About Us</a>
+                        <a class="dropdown-item" href="/mygrades.php">Grades</a>
+                        <a class="dropdown-item" href="/myprofile.php">My Profile</a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Blog</a>
+                        <a class="dropdown-item" href="/myactivity.php">Activity</a>
 
                     </div>
                 </li>
                 <li class="nav-item" role="presentation"><a class="nav-link" href="/aboutus.php">About Us </a></li>
                 <li class="nav-item" role="presentation"><a class="nav-link" href="/contacts.php">Contact us</a></li>
+
+                <li>
+                    <div >
+                        <?php
+                        if(!isset($_SESSION['userid'])){
+                            ?>
+                            <a class="nav-item nav-link" href="/login.php">Login <span class="sr-only">(current)</span></a>
+                        <?php } else { ?>
+                            <a class="nav-item nav-link" href="/logout.php">Logout <span class="sr-only">(current)</span></a>
+                        <?php } ?>
+                    </div>
+                </li>
+
             </ul>
+
         </div>
 
 </nav>

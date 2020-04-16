@@ -1,5 +1,6 @@
 <?php
 $title = 'Home_page';
+require_once 'includes/session.php';
 ?>
 
 <!DOCTYPE html>
@@ -26,10 +27,30 @@ $title = 'Home_page';
             <ul class="nav navbar-nav ml-auto">
                 <li class="nav-item" role="presentation"><a class="nav-link active" href="/Displaygames.php">Games</a>
                 </li>
-                <li class="nav-item" role="presentation"><a class="nav-link" href="login.php">Login</a></li>
-                <li class="nav-item" role="presentation"><a class="nav-link"
-                                                            href="schoolManagerSchoolAdminregistration.php">Sign
-                        Up</a></li>
+                <li >
+                    <div >
+                        <!-- Show logout once logged in or show login by default and maintain session-->
+                        <?php
+                        if(!isset($_SESSION['userid'])){
+                            ?>
+                            <a class="nav-item nav-link" href="/login.php">Login <span class="sr-only">(current)</span></a>
+                        <?php } else { ?>
+                            <a class="nav-item nav-link" href="/logout.php">Logout <span class="sr-only">(current)</span></a>
+                        <?php } ?>
+                    </div>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <div >
+                        <!-- Show logout once logged in or show login by default and maintain session-->
+                        <?php
+                        if(!isset($_SESSION['userid'])){
+                            ?>
+                            <a class="nav-item nav-link" href="/schoolManagerSchoolAdminregistration.php">Sign Up <span class="sr-only">(current)</span></a>
+                        <?php } else { ?>
+                            <a class="nav-item nav-link invisible" href="/schoolManagerSchoolAdminregistration.php"></a>
+                        <?php } ?>
+                    </div>
+                </li>
                 <li class="nav-item" role="presentation"><a class="nav-link" href="contacts.php">Contact us</a></li>
             </ul>
         </div>
@@ -40,7 +61,9 @@ $title = 'Home_page';
         <h1>Learning made simple&nbsp;</h1>
         <p>Ready to improve your learning skills by playing games. Whola! We offer best curriculum-based games and track
             your performce. Ready? Play!</p>
-        <iframe width="760" height="415" src="https://www.youtube.com/embed/d9fTy-tecEY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <?php
+        require_once 'media/videos/youtubeIntro.php';
+        ?>
         <p><a class="btn btn-primary" role="button">Learn more</a></p>
     </div>
 </div>
