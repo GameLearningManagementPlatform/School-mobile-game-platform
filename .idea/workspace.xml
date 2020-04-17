@@ -2,27 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9313587e-543b-4675-af75-c132ba7c2fbc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Dashboard.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aboutus.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/user_authentication.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/includes/auth_check.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/includes/session.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logout.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/videos/youtubeIntro.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myactivity.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mygrades.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myprofile.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Development Stucture/HowTheSystemWorks.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/createUsername_Password.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PlatformAdmin-DeleteUser.php" beforeDir="false" afterPath="$PROJECT_DIR$/PlatformAdmin-DeleteUser.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PlatformAdmin-EditUser.php" beforeDir="false" afterPath="$PROJECT_DIR$/PlatformAdmin-EditUser.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/Pretty-Footer.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/Pretty-Footer.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/conn.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/conn.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/managercrud.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/userCrud.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/includes/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/userCrud.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/userCrud.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/includes/auth_check.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/auth_check.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/login.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/schoolManagerSchoolAdminViewUsers.php" beforeDir="false" afterPath="$PROJECT_DIR$/schoolManagerSchoolAdminViewUsers.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/schoolManagerSchoolAdminregistration.php" beforeDir="false" afterPath="$PROJECT_DIR$/schoolManagerSchoolAdminregistration.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/success.php" beforeDir="false" afterPath="$PROJECT_DIR$/success.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -95,7 +82,7 @@
       <workItem from="1585703037962" duration="11467000" />
       <workItem from="1585882120821" duration="52937000" />
       <workItem from="1586487932299" duration="51406000" />
-      <workItem from="1586847944628" duration="38471000" />
+      <workItem from="1586847944628" duration="51961000" />
     </task>
     <servers />
   </component>

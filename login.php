@@ -10,8 +10,9 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
     $password = $_POST['password'];
     $new_password = md5($password.$username);
 
-    $result = $user_authentication->getUser($username,$new_password);
-    if(!$result){
+    $result =(($user_authentication->getUser($username,$new_password))) ;
+
+    if(!$result  ){
         echo '<div class="alert alert-danger">Username or Password is incorrect! Please try again. </div>';
     }else{
         $_SESSION['username'] = $username;
@@ -20,7 +21,10 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
         //using an if statement to rout only admin to view all admin platform roles(we will create a specific admin page routes)
         if ($username == 'admin'){
             header("Location: schoolManagerSchoolAdminViewUsers.php");
+        }else{
+            header("Location: myprofile.php");
         }
+
 
     }
 

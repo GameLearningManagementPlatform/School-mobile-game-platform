@@ -31,6 +31,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     } else {
         $email = 'A user without a email';
     }
+    if (isset($_POST['username'])) {
+        $username = $_POST['username'];
+    } else {
+        $username = 'A user without a username';
+    }
     if (isset($_POST['password'])) {
         $password = $_POST['password'];
     } else {
@@ -46,7 +51,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     } else {
         $schoolname = 'A user without a  schoolname';
     }
-    $isSuccess = $crud->insertSchoolmanager_Admin($firstname, $secondname, $role, $email, $password, $phonenumber, $schoolname);
+    $isSuccess = $crud->insertSchoolmanager_Admin($firstname, $secondname, $role, $email,$username, $password, $phonenumber, $schoolname);
 
     if ($isSuccess) {
         echo '<h1 class="text-center text-success">You have been registered successfully</h1><br>
