@@ -33,6 +33,7 @@ if(isset($_POST['submit'])) {
                     <label for="exampleInputPassword1">Confirm password </label>
                     <input required type="password" class="form-control" id="exampleInputPassword1" name="password">
                 </div>
+                <!--Before hitting submit validate the password matching using javascript-->
 
                 <button type="submit" name="submit" class="btn btn-primary btn-block">Submit</button>
 

@@ -11,12 +11,12 @@ class crud
     }
 
     // insert into database
-    public function insertSchoolmanager_Admin($firstname, $secondname, $role, $email,$username, $password, $phonenumber, $schoolname)
+    public function insertSchoolmanager_Admin($firstname, $secondname, $role, $email, $username, $password, $phonenumber, $schoolname)
     {
         try {
             // define sql statement to be executed
-            $sql = "INSERT into schooladmin_schoolmanager(firstname, secondname,role, email,username, password,phonenumber,school_id ) VALUES (:firstname, :secondname, :role, :email, 
-            :username,:password, :phonenumber, :schoolname)";
+            $sql = "INSERT into schooladmin_schoolmanager(firstname, secondname,role, email,phonenumber,school_id ) VALUES (:firstname, :secondname, 
+            :role, :email,  :phonenumber, :schoolname)";
             //prepare the sql statement for execution
             $pdo = $this->db->prepare($sql);
             // bind all placeholders to the actual values
@@ -24,8 +24,6 @@ class crud
             $pdo->bindparam(':secondname', $secondname);
             $pdo->bindparam(':role', $role);
             $pdo->bindparam(':email', $email);
-            $pdo->bindparam(':username', $username);
-            $pdo->bindparam(':password', $password);
             $pdo->bindparam(':phonenumber', $phonenumber);
             $pdo->bindparam(':schoolname', $schoolname);
 
@@ -50,21 +48,6 @@ class crud
             return false;
         }
     }
-   /* public function getSchoolAdminSchoolManagerByEmail_Password($username, $password){
-        //a functon to get email of the admin to help with login
-        try{
-            $sql = "select * from schooladmin_schoolmanager where username = :username AND password = :password ";
-            $pdo = $this->db->query($sql);
-            $pdo->bindparam('username', $username);
-            $pdo->bindparam('password', $password);
-            $pdo->execute();
-            $result = $pdo->fetch();
-            return $result;
-        }catch (PDOException $exception){
-            echo $exception->getMessage();
-            return false;
-        }
-    }*/
 
     public function getSchoolName()
     {
@@ -95,11 +78,11 @@ class crud
         }
     }
 
-    public function editManager_Admin($id, $firstname, $secondname, $role, $email, $password, $phonenumber, $schoolname)
+    public function editManager_Admin($id, $firstname, $secondname, $role, $email, $phonenumber, $schoolname)
     {
         try {
             $sql = "UPDATE `schooladmin_schoolmanager` SET 
-                   `firstname`= :firstname,`secondname`= :secondname,`role`= :role,`email`= :email,`password`= :password,
+                   `firstname`= :firstname,`secondname`= :secondname,`role`= :role,`email`= :email,
                    `phonenumber`= :phonenumber,`school_id`= :schoolname WHERE 	user_id = :id";
 
             //prepare the sql statement for execution
@@ -110,7 +93,6 @@ class crud
             $pdo->bindparam(':secondname', $secondname);
             $pdo->bindparam(':role', $role);
             $pdo->bindparam(':email', $email);
-            $pdo->bindparam(':password', $password);
             $pdo->bindparam(':phonenumber', $phonenumber);
             $pdo->bindparam(':schoolname', $schoolname);
 
@@ -124,7 +106,8 @@ class crud
         }
     }
 
-    public function deleteSchoolAdmin_SchoolManager($id){
+    public function deleteSchoolAdmin_SchoolManager($id)
+    {
         try {
             $sql = 'DELETE FROM `schooladmin_schoolmanager` WHERE user_id = :id ';
             //prepare the sql statement for execution
@@ -133,28 +116,9 @@ class crud
             $pdo->bindparam(':id', $id);
             $pdo->execute();
             return true;
-        }catch (PDOException $exception){
+        } catch (PDOException $exception) {
             echo $exception->getMessage();
             return false;
         }
     }
-
-    //inserting into user_authentication table for username and password
-    public function insertUserNameAndPassword($username, $password){
-        try {
-            $sql = 'INSERT INTO user_authentication (username, password) VALUES (:username, :password)';
-            $pdo = $this->db->prepare($sql);
-
-            $pdo->bindparam(':username', $username);
-            $pdo->bindparam(':password', $password);
-            // execute statement
-            $pdo->execute();
-            return true;
-
-        } catch (PDOException $e) {
-            echo $e->getMessage();
-            return false;
-        }
-    }
-
 }

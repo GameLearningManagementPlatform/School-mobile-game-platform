@@ -18,7 +18,6 @@ if (!isset($_GET['id'])) {
             <h5 class="card-title"><?php echo $result['firstname'] . "\t" . $result['secondname']; ?></h5>
             <h6 class="card-subtitle mb-2 text-muted"><?php echo $result['role']; ?></h6>
             <p class="card-text">Email:<?php echo $result['email']; ?></p>
-            <p class="card-text">Password:<?php echo $result['password']; ?></p>
             <p class="card-text">Phone Number:<?php echo $result['phonenumber']; ?></p>
             <p class="card-text">School ID:<?php echo $result['school_id']; ?></p>
             <p class="card-text">School Name:<?php echo $result['schoolname']; ?></p>

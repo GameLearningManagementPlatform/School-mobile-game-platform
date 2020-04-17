@@ -31,16 +31,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     } else {
         $email = 'A user without a email';
     }
-    if (isset($_POST['username'])) {
-        $username = $_POST['username'];
-    } else {
-        $username = 'A user without a username';
-    }
-    if (isset($_POST['password'])) {
-        $password = $_POST['password'];
-    } else {
-        $password = 'A user without a password';
-    }
+
     if (isset($_POST['phonenumber'])) {
         $phonenumber = $_POST['phonenumber'];
     } else {

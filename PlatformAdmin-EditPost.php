@@ -11,12 +11,11 @@ if (isset($_POST['submit'])) {
     $secondname = $_POST['secondname'];
     $role = $_POST['role'];
     $email = $_POST['email'];
-    $password = $_POST['password'];
     $phonenumber = $_POST['phonenumber'];
     $schoolname = $_POST['schoolname'];
 
 
-    $result = $crud->editManager_Admin($id,$firstname, $secondname, $role, $email, $password, $phonenumber, $schoolname);
+    $result = $crud->editManager_Admin($id,$firstname, $secondname, $role, $email, $phonenumber, $schoolname);
 
     if($result){
         header("Location: schoolManagerSchoolAdminViewUsers.php");

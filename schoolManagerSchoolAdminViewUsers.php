@@ -52,7 +52,6 @@ $result = $crud->getSchoolManager_SchoolAdmin();
             <th>secondname</th>
             <th>role</th>
             <th>email</th>
-            <th>password</th>
             <th>phonenumber</th>
             <th>schoolname</th>
             <th>view</th>
@@ -67,7 +66,6 @@ $result = $crud->getSchoolManager_SchoolAdmin();
                 <td> <?php echo $row['secondname']; ?></td>
                 <td> <?php echo $row['role']; ?></td>
                 <td> <?php echo $row['email']; ?></td>
-                <td> <?php echo $row['password']; ?></td>
                 <td> <?php echo $row['phonenumber']; ?></td>
                 <td> <?php echo $row['schoolname']; ?></td>
                 <td><a href="PlatformAdmin-ViewUser.php?id=<?php echo $row['user_id']; ?>"

@@ -9,8 +9,6 @@ require 'database/conn.php';
             -first name
             -last name
             -email
-            -username
-            -password
             -Date of Birth
             -School list from dropdown(name of the school)
             -contact number
@@ -58,15 +56,6 @@ require 'database/conn.php';
                     <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
                         else.</small>
                 </div>
-                <div class="form-group">
-                    <label for="username">username</label>
-                    <input required type="text" class="form-control" id="username" name="username">
-                </div>
-                <div class="form-group">
-                    <label for="exampleInputPassword1">Password</label>
-                    <input required type="password" class="form-control" id="exampleInputPassword1" name="password">
-                </div>
-
                 <div class="form-group">
                     <label for="phonenumber"> Contact Number</label>
                     <input type="text" class="form-control" id="phonenumber" name="phonenumber">
