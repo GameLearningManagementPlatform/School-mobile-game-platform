@@ -28,6 +28,9 @@ $user_authentication = new user_authentication($pdo);
 
 //te first users to be loaded
 $user_authentication->insertUser("admin", "password");
+
+require 'gamesCrud.php';
+$gamesCrud = new gamesCrud($pdo);
 ?>
 
 

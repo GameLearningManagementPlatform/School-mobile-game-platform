@@ -1,3 +1,21 @@
+/* styling the middle contents of new game page to separate the footer from header*/
+.page-wrapper{
+    min-height: 100%;
+    text-align: center;
+    align-items: center;
+}
+
+.game-list-item blockquote {
+    color: #999;
+    padding: 0 10px;
+}
+
+.game-list-item img {
+    max-width: 100%;
+    max-height: 200px;
+    margin-bottom: 10px;
+}
+
 .bg-dark{
 background-color: #04204e !important;
 }

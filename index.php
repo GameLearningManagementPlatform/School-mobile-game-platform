@@ -25,7 +25,7 @@ require_once 'includes/session.php';
         <div
                 class="collapse navbar-collapse" id="navcol-1">
             <ul class="nav navbar-nav ml-auto">
-                <li class="nav-item" role="presentation"><a class="nav-link active" href="/Displaygames.php">Games</a>
+                <li class="nav-item" role="presentation"><a class="nav-link active" href="/game_DisplayAllGames.php">Games</a>
                 </li>
                 <li >
                     <div >
@@ -51,7 +51,7 @@ require_once 'includes/session.php';
                         <?php } ?>
                     </div>
                 </li>
-                <li class="nav-item" role="presentation"><a class="nav-link" href="contacts.php">Contact us</a></li>
+                <li class="nav-item" role="presentation"><a class="nav-link" href="contactUs.php">Contact us</a></li>
             </ul>
         </div>
 
