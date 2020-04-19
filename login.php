@@ -19,8 +19,8 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
         $_SESSION['userid'] = $result['id'];
 
         //using an if statement to rout only admin to view all admin platform roles(we will create a specific admin page routes)
-        if ($username == 'admin'){
-            header("Location: schoolManagerSchoolAdminViewUsers.php");
+       if ($username == 'admin'){
+            header("Location: Dashboard_Admin.php");
         }else{
             header("Location: myprofile.php");
         }

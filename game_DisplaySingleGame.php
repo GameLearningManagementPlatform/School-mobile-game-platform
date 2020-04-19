@@ -1,7 +1,10 @@
 <?php
 $title = 'Display Single Game';
-require 'includes/header.php';
-require 'database/conn.php';
+require_once 'includes/header.php';
+require_once 'database/conn.php';
+require_once 'includes/auth_check.php';
+
+
 
 $id = $_GET['id'];
 
