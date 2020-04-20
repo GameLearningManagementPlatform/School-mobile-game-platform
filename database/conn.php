@@ -27,7 +27,8 @@ $crud = new crud($pdo);
 $user_authentication = new user_authentication($pdo);
 
 //te first users to be loaded
-$user_authentication->insertUser("admin", "password");
+$user_authentication->insertUser("admin", "password", "Platform Admin");
+//$user_authentication->getRole($role);
 
 require 'gamesCrud.php';
 $gamesCrud = new gamesCrud($pdo);

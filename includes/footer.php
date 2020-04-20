@@ -35,11 +35,11 @@
     <div class="text-center" >
         <a href="../Dashboard_Admin.php"
            class="btn btn-danger">ADMIN PORTAL</a>
-        <a href=""
+        <a href="../Dashboard_SchoolManagerAdmin.php"
            class="btn btn-danger">SCHOOLMANAGER/SCHOOLADMIN PORTAL</a>
-        <a href=""
+        <a href="../Dashboard_Teacher.php"
            class="btn btn-danger">TEACHERS PORTAL</a>
-        <a href=""
+        <a href="../Dashboard_Student.php"
            class="btn btn-danger">STUDENT PORTAL</a>
     </div>
 

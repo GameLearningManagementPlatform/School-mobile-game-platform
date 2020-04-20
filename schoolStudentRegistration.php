@@ -15,18 +15,21 @@ require 'includes/header.php'; ?>
                     <input type="text" class="form-control" id="secondname" name="secondname">
                 </div>
                 <div class="form-group">
-                    <label for="email">Email address</label>
+                    <labl for="email">Email address</labl>
                     <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp">
                     <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
                         else.</small>
                 </div>
                 <div class="form-group">
-                    <label for="exampleInputPassword1">Password</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1" name="password">
+                    <label for="role">Role (Choose from list)</label>
+                    <select class="form-control" id="role" name="role">
+                        <option>Student</option>
+
+                    </select>
                 </div>
                 <div class="form-group">
-                    <label for="teacherSubject">What is the class  level of the student in school (Choose from list)</label>
-                    <select class="form-control" id="role" name="role">
+                    <label for="studentlevel">What is the class  level of the student in school (Choose from list)</label>
+                    <select class="form-control" id="studentlevel" name="studentlevel">
                         <option>Grade 1</option>
                         <option>Grade 2</option>
                         <option>Grade 3</option>

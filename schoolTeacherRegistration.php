@@ -14,6 +14,7 @@ require 'includes/header.php'; ?>
                     <label for="secondname">Second Name</label>
                     <input required type="text" class="form-control" id="secondname" name="secondname">
                 </div>
+
                 <div class="form-group">
                     <label for="teacherSubject">What is the subject of the teacher in school (Choose from list)</label>
                     <select class="form-control" id="role" name="role">
@@ -30,10 +31,6 @@ require 'includes/header.php'; ?>
                     <input required type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp">
                     <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
                         else.</small>
-                </div>
-                <div class="form-group">
-                    <label for="exampleInputPassword1">Password</label>
-                    <input required type="password" class="form-control" id="exampleInputPassword1" name="password">
                 </div>
                 <div class="form-group">
                     <label for="phonenumber"> Contact Number</label>

@@ -6,8 +6,10 @@ require 'database/conn.php';
 if(isset($_POST['submit'])) {
     $username = $_POST['username'];
     $password = $_POST['password'];
+    $role = $_POST['role'];
 
-    $result = $user_authentication->insertUser($username, $password);
+
+    $result = $user_authentication->insertUser($username, $password, $role);
     if ($result==true){
         header("Location: login.php");
     }else{
@@ -20,6 +22,15 @@ if(isset($_POST['submit'])) {
         <div id="main" class="container clear-top">
             <h1>Create your username and password</h1>
             <form method="post" action="createUsername_Password.php">
+                <div class="form-group">
+                    <label for="role">Role(Choose from list)</label>
+                    <select class="form-control" id="role" name="role">
+                        <option>School Admin</option>
+                        <option>School Manager</option>
+                        <option>Teacher</option>
+                        <option>Student<option>
+                    </select>
+                </div>
                 <div class="form-group">
                     <label for="firstname">Username</label>
                     <input required type="text" class="form-control" id="username" name="username">
