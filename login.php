@@ -29,6 +29,8 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
         }
 
 
+
+
         if ($role == 'School Manager'or $role == 'School Admin'){
             header("Location: Dashboard_SchoolManagerAdmin.php");
         }
