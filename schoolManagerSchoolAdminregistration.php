@@ -2,8 +2,6 @@
 $title = 'School-registration';
 require 'includes/header.php';
 require 'database/conn.php';
-require_once 'includes/auth_check.php';
-
 ?>
 
     <!--
