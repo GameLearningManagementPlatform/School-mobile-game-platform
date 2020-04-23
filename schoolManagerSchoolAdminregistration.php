@@ -4,23 +4,6 @@ require 'includes/header.php';
 require 'database/conn.php';
 ?>
 
-    <!--
-            -id
-            -first name
-            -last name
-            -email
-            -Date of Birth
-            -School list from dropdown(name of the school)
-            -contact number
-
-            //on sign up and login authentication.
-            -Add teachers
-            -Add Students
-
-
-
-
-    -->
     <div id="wrap">
         <div id="main" class="container clear-top">
             <h1>Registration for the school</h1>

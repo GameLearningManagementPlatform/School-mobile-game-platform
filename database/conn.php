@@ -21,7 +21,7 @@ try {
 } catch (PDOException $e) {
     throw new PDOException($e->getMessage());
 }
-require 'userCrud.php';
+require 'SchoolManagerAdmin_Crud.php';
 require_once 'user_authentication.php';
 $crud = new crud($pdo);
 $user_authentication = new user_authentication($pdo);
@@ -32,6 +32,14 @@ $user_authentication->insertUser("admin", "password", "Platform Admin");
 
 require 'gamesCrud.php';
 $gamesCrud = new gamesCrud($pdo);
+
+//initiate Student_Crud
+require 'Student_Crud.php';
+$Student_Crud = new Student_Crud($pdo);
+
+//initiate SchoolTeacher_Crud
+require 'SchoolTeacher_Crud.php';
+$SchoolTeacher_Crud = new SchoolTeacher_Crud($pdo);
 ?>
 
 

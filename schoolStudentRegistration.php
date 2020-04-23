@@ -1,11 +1,13 @@
 <?php
 $title = 'Registration of   students';
-require 'includes/header.php'; ?>
+require 'includes/header.php';
+require 'database/conn.php';
+?>
 
     <div id="wrap">
         <div id="main" class="container clear-top">
             <h1>Registration for the school</h1>
-            <form method="post" action="success.php">
+            <form method="post" action="successStudent.php">
                 <div class="form-group">
                     <label for="firstname">First Name</label>
                     <input type="text" class="form-control" id="firstname" name="firstname">
@@ -21,12 +23,15 @@ require 'includes/header.php'; ?>
                         else.</small>
                 </div>
                 <div class="form-group">
-                    <label for="role">Role (Choose from list)</label>
-                    <select class="form-control" id="role" name="role">
-                        <option>Student</option>
-
+                    <label for="schoolname">School name (Choose from list)</label>
+                    <select class="form-control" id="schoolname" name="schoolname">
+                        <?php $results = $SchoolTeacher_Crud->getSchoolName();
+                        while ($r = $results->fetch(PDO::FETCH_ASSOC)) { ?>
+                            <option value="<?php echo $r['school_id'] ?>"><?php echo $r['schoolname']; ?></option>
+                        <?php } ?>
                     </select>
                 </div>
+
                 <div class="form-group">
                     <label for="studentlevel">What is the class  level of the student in school (Choose from list)</label>
                     <select class="form-control" id="studentlevel" name="studentlevel">

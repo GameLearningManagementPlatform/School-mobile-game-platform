@@ -20,12 +20,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     } else {
         $secondname = 'A user without a secondname';
     }
-
-    if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-        $role = $_POST['role'];
-    } else {
-        $role = 'A user without a role';
-    }
     if (isset($_POST['email'])) {
         $email = $_POST['email'];
     } else {
@@ -53,11 +47,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $teacherSubject = 'A user without a  teacherSubject';
     }
 
+    $isStudentSuccess = $Student_Crud->insertStudent($firstname, $secondname, $email,  $studentlevel, $schoolname);
 
-
-    $isSuccess = $crud->insertSchoolmanager_Admin($firstname, $secondname, $role, $email,$username, $password, $phonenumber, $schoolname);
-
-    if ($isSuccess) {
+    if ($isStudentSuccess) {
         echo '<h1 class="text-center text-success">You have been registered successfully</h1><br>
 
                 <h3 class="p-3 mb-2 bg-success text-white">Please confirm your email before login</h3>';
@@ -70,10 +62,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 <div class="card" style="width: 18rem;">
     <div class="card-body">
         <h5 class="card-title"><?php echo $_POST['firstname'] . "\t" . $_POST['secondname']; ?></h5>
-        <h6 class="card-subtitle mb-2 text-muted"><?php echo $_POST['role']; ?></h6>
         <p class="card-text">Email:<?php echo $_POST['email']; ?></p>
-        <p class="card-text">Password:<?php echo $_POST['password']; ?></p>
-        <p class="card-text">Phone Number:<?php echo $_POST['phonenumber']; ?></p>
+        <p class="card-text">Phone Number:<?php echo $_POST['studentlevel']; ?></p>
 
 
         <a href="/login.php" class="card-link">Login Here</a>

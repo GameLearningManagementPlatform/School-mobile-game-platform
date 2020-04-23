@@ -8,5 +8,4 @@ require_once  'includes/Teacher_Auth.php';
 require_once 'includes/headerTeacher.php';
 ?>
 
-
 <?php  include_once 'includes/footer.php' ?>
