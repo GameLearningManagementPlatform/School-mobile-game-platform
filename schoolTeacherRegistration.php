@@ -2,6 +2,8 @@
 $title = 'Teacher-registration';
 require 'includes/header.php';
 require 'database/conn.php';
+require_once 'includes/headerSchoolAdminSchoolManager.php';
+
 ?>
 
     <div id="wrap">

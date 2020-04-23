@@ -85,7 +85,7 @@ class SchoolTeacher_Crud
     {
         try {
             $sql = "UPDATE `teacher_registration` SET 
-                   `firstname`= :firstname,`secondname`= :secondname,`role`= :role,`email`= :email,
+                   `firstname`= :firstname,`secondname`= :secondname,`teacherSubject`= :teacherSubject,`email`= :email,
                    `phonenumber`= :phonenumber,`school_id`= :schoolname WHERE 	user_id = :id";
 
             //prepare the sql statement for execution
@@ -94,7 +94,7 @@ class SchoolTeacher_Crud
             $pdo->bindparam(':id', $id);
             $pdo->bindparam(':firstname', $firstname);
             $pdo->bindparam(':secondname', $secondname);
-            $pdo->bindparam(':role', $teacherSubject);
+            $pdo->bindparam(':teacherSubject', $teacherSubject);
             $pdo->bindparam(':email', $email);
             $pdo->bindparam(':phonenumber', $phonenumber);
             $pdo->bindparam(':schoolname', $schoolname);
