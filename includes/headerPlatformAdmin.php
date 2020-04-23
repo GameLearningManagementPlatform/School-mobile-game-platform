@@ -17,7 +17,7 @@
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <a class="dropdown-item" href="../game_AddNewGame.php">Games Registration</a>
-                    <a class="dropdown-item" href="../game_crud.php">Manager games(CRUD)</a>
+                    <a class="dropdown-item" href="../game_viewGames.php">Manager games(CRUD)</a>
                     <div class="dropdown-divider"></div>
                 </div>
             </li>

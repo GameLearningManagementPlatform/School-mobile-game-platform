@@ -1,4 +1,5 @@
 <?php
+
 class gamesCrud
 {
     private $db;
@@ -9,7 +10,7 @@ class gamesCrud
         $this->db = $conn;
     }
 
-    public function registerNewGame($company_name, $game_name , $domain_name, $student_level, $description, $gameurl, $image)
+    public function registerNewGame($company_name, $game_name, $domain_name, $student_level, $description, $gameurl, $image)
     {
         try {
             // define sql statement to be executed
@@ -50,6 +51,7 @@ class gamesCrud
         }
 
     }
+
     function getOneGame($id)
     {
         try {
@@ -66,4 +68,56 @@ class gamesCrud
             return false;
         }
     }
-}
+
+    function deleteGame($id)
+    {
+        try {
+            $sql = 'DELETE FROM `game_registration` WHERE game_id = :id ';
+            //prepare the sql statement for execution
+            $pdo = $this->db->prepare($sql);
+            // bind all placeholders to the actual values
+            $pdo->bindparam(':id', $id);
+            $pdo->execute();
+            return true;
+        } catch (PDOException $exception) {
+            echo $exception->getMessage();
+            return false;
+        }
+    }
+
+
+    function editGame($id, $company_name, $game_name, $domain_name, $student_level,
+                      $description, $gameurl, $image)
+    {
+        try {
+            $sql = 'UPDATE `game_registration` SET `company_name`= :company_name,
+                    `game_name`= :game_name,
+                    `domain_name`= :domain_name,`student_level`= :student_level,
+                    `description`= :description,`gameurl`= :gameurl,`image`= :image WHERE game_id = :id';
+
+            //prepare the sql statement for execution
+            $pdo = $this->db->prepare($sql);
+            // bind all placeholders to the actual values
+            $pdo->bindparam(':id', $id);
+            $pdo->bindparam(':company_name', $company_name);
+            $pdo->bindparam(':game_name', $game_name);
+            $pdo->bindparam(':domain_name', $domain_name);
+            $pdo->bindparam(':student_level', $student_level);
+            $pdo->bindparam(':description', $description);
+            $pdo->bindparam(':gameurl', $gameurl);
+            $pdo->bindparam(':image', $image);
+
+
+            // execute statement
+            $pdo->execute();
+            return true;
+
+        } catch (PDOException $exception) {
+            echo $exception->getMessage();
+            return false;
+        }
+
+    }
+
+    }
+
