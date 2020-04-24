@@ -3,6 +3,8 @@ $title = 'User Login';
 
 require_once 'includes/header.php';
 require_once 'database/conn.php';
+require_once 'includes/headerPlatformAdmin.php';
+
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     if (isset($_POST['game_name'])) {

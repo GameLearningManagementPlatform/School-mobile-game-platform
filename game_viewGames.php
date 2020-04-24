@@ -4,7 +4,7 @@ $title = 'view users';
 require 'includes/header.php';
 require_once 'includes/auth_check.php';
 require 'database/conn.php';
-require_once 'includes/headerSchoolAdminSchoolManager.php';
+require_once 'includes/headerPlatformAdmin.php';
 
 $result = $gamesCrud->get_games();
 ?>
