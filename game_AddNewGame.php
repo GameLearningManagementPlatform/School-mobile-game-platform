@@ -56,7 +56,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $domain_id = 'A game without a  domain_id';
     }
     if (isset($_POST['image'])) {
-        $image = $_POST['image'];
+        $image = $_POST['image']; 
     } else {
         $image = 'A game without a  image';
     }

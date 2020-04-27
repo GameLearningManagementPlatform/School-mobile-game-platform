@@ -25,7 +25,7 @@ require_once 'includes/session.php';
         <div
                 class="collapse navbar-collapse" id="navcol-1">
             <ul class="nav navbar-nav ml-auto">
-                <li class="nav-item" role="presentation"><a class="nav-link active" href="/game_DisplayAllGames.php">Games</a>
+                <li class="nav-item" role="presentation"><a class="nav-link active" href="./game_DisplayAllGames.php">Games</a>
                 </li>
                 <li >
                     <div >
@@ -33,9 +33,9 @@ require_once 'includes/session.php';
                         <?php
                         if(!isset($_SESSION['userid'])){
                             ?>
-                            <a class="nav-item nav-link" href="/login.php">Login <span class="sr-only">(current)</span></a>
+                            <a class="nav-item nav-link" href="./login.php">Login <span class="sr-only">(current)</span></a>
                         <?php } else { ?>
-                            <a class="nav-item nav-link" href="/logout.php">Logout <span class="sr-only">(current)</span></a>
+                            <a class="nav-item nav-link" href="./logout.php">Logout <span class="sr-only">(current)</span></a>
                         <?php } ?>
                     </div>
                 </li>
@@ -45,13 +45,13 @@ require_once 'includes/session.php';
                         <?php
                         if(!isset($_SESSION['userid'])){
                             ?>
-                            <a class="nav-item nav-link" href="/schoolManagerSchoolAdminregistration.php">Sign Up <span class="sr-only">(current)</span></a>
+                            <a class="nav-item nav-link" href="./schoolManagerSchoolAdminregistration.php">Sign Up <span class="sr-only">(current)</span></a>
                         <?php } else { ?>
-                            <a class="nav-item nav-link invisible" href="/schoolManagerSchoolAdminregistration.php"></a>
+                            <a class="nav-item nav-link invisible" href="./schoolManagerSchoolAdminregistration.php"></a>
                         <?php } ?>
                     </div>
                 </li>
-                <li class="nav-item" role="presentation"><a class="nav-link" href="contactUs.php">Contact us</a></li>
+                <li class="nav-item" role="presentation"><a class="nav-link" href="./contactUs.php">Contact us</a></li>
             </ul>
         </div>
 
