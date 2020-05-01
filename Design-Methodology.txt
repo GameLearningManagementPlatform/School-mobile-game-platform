@@ -1,0 +1,5 @@
+We will have an admin page available only for logged on admins and companies to add new games.
+The companies can only add or update games
+The admin platforms can add, update, delete games.
+The added games will be displayed on the Display-games.php
+Companies can add games using Add-new-games.php site.
