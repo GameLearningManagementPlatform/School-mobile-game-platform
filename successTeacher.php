@@ -70,7 +70,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         <p class="card-text">Phone Number:<?php echo $_POST['phonenumber']; ?></p>
 
 
-        <a href="/login.php" class="card-link">Login Here</a>
+        <a href="./login.php" class="card-link">Login Here</a>
     </div>
 </div>
 

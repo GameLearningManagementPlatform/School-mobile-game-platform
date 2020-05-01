@@ -17,7 +17,7 @@ require_once 'session.php';
     <link rel="stylesheet" href="css/style.css">
 
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href=".//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 
 
     <title>SGM - <?php echo $title?></title>
@@ -26,11 +26,11 @@ require_once 'session.php';
 
 <body id="register">
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container "><a class="navbar-brand" href="/index.php"><strong>School Game Management </strong></a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+    <div class="container "><a class="navbar-brand" href="./index.php"><strong>School Game Management </strong></a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
         <div
             class="collapse navbar-collapse" id="navcol-1">
             <ul class="nav navbar-nav ml-auto">
-                <li class="nav-item" role="presentation"><a class="nav-link active" href="/game_DisplayAllGames.php">Games</a></li>
+                <li class="nav-item" role="presentation"><a class="nav-link active" href="./game_DisplayAllGames.php">Games</a></li>
 
                 <li class="nav-item dropdown"  role="presentation">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
@@ -38,24 +38,24 @@ require_once 'session.php';
                         My Dashboard
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="/mygrades.php">Grades</a>
-                        <a class="dropdown-item" href="/myprofile.php">My Profile</a>
+                        <a class="dropdown-item" href="./mygrades.php">Grades</a>
+                        <a class="dropdown-item" href="./myprofile.php">My Profile</a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="/myactivity.php">Activity</a>
+                        <a class="dropdown-item" href="./myactivity.php">Activity</a>
 
                     </div>
                 </li>
-                <li class="nav-item" role="presentation"><a class="nav-link" href="/aboutus.php">About Us </a></li>
-                <li class="nav-item" role="presentation"><a class="nav-link" href="/contactUs.php">Contact us</a></li>
+                <li class="nav-item" role="presentation"><a class="nav-link" href="./aboutus.php">About Us </a></li>
+                <li class="nav-item" role="presentation"><a class="nav-link" href="./contactUs.php">Contact us</a></li>
 
                 <li>
                     <div >
                         <?php
                         if(!isset($_SESSION['userid'])){
                             ?>
-                            <a class="nav-item nav-link" href="/login.php">Login <span class="sr-only">(current)</span></a>
+                            <a class="nav-item nav-link" href="./login.php">Login <span class="sr-only">(current)</span></a>
                         <?php } else { ?>
-                            <a class="nav-item nav-link" href="/logout.php">Logout <span class="sr-only">(current)</span></a>
+                            <a class="nav-item nav-link" href="./logout.php">Logout <span class="sr-only">(current)</span></a>
                         <?php } ?>
                     </div>
                 </li>

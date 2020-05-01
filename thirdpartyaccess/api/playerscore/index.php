@@ -16,8 +16,8 @@
 
   $score_data = json_decode(file_get_contents('php://input'));
 
-  $score->player_id = $score_data->playerId;
-  $score->game_id = $score_data->gameId;
+  $score->player_id = $score_data->user;
+  $score->game_id = $score_data->id;
   $score->play_mode = $score_data->playMode; //"individual" of "group"
   $score->start_time = $score_data->startTime;
   $score->end_time = $score_data->endTime;

@@ -43,7 +43,7 @@ $result = $gamesCrud->getOneGame($id);
                     <a href="<?php echo $result['gameurl']; ?> " target="_blank"
                        class="btn btn-primary"> Download Game</a>
 
-                    <a href=""
+                    <a href="<?php echo $result['gameurl'].'?id='.$result['game_id'].'&user='.$_SESSION['userid'] ?>" target="_blank";
                        class="btn btn-dark">Play Individually</a>
 
                     <a href=""

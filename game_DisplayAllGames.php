@@ -10,7 +10,7 @@ $games = $gamesCrud->get_games();
         <?php foreach ($games as $myGames) { ?>
             <div class="col-lg-4 game-list-item">
                 <!--quering for one game sent as a link-->
-                <a href="/game_DisplaySingleGame.php?id=<?php echo $myGames['game_id'] ?>">
+                <a href="./game_DisplaySingleGame.php?id=<?php echo $myGames['game_id'] ?>">
                 <h2><?php echo $myGames['game_name']; ?></h2>
 
                     <img src="media/images/<?php echo $myGames['image']; ?>" class="img-rounded">
