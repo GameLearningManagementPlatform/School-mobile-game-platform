@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 27, 2020 at 03:59 PM
+-- Generation Time: May 01, 2020 at 07:36 PM
 -- Server version: 10.4.10-MariaDB
 -- PHP Version: 7.3.12
 
@@ -149,7 +149,8 @@ INSERT INTO `score_board` (`score_id`, `player_id`, `game_id`, `play_mode`, `sta
 (3, 1, 1, 'single', '2020-04-27 10:19:20', '2020-04-27 10:23:54', 31, '2020-04-27 09:23:26'),
 (5, 1, 1, 'single', '2020-04-27 10:19:20', '2020-04-27 10:23:54', 31, '2020-04-27 12:14:26'),
 (6, 1, 2, 'single', '2020-04-27 10:19:20', '2020-04-27 10:23:54', 31, '2020-04-27 12:15:42'),
-(7, 1, 3, 'single', '2020-04-27 10:19:20', '2020-04-27 10:23:54', 15, '2020-04-27 12:16:21');
+(7, 1, 3, 'single', '2020-04-27 10:19:20', '2020-04-27 10:23:54', 15, '2020-04-27 12:16:21'),
+(10, 1, 3, 'single', '2020-04-27 10:19:20', '2020-04-27 10:23:54', 15, '2020-05-01 16:39:49');
 
 -- --------------------------------------------------------
 
@@ -203,7 +204,8 @@ INSERT INTO `teacher_registration` (`user_id`, `firstname`, `secondname`, `teach
 --
 
 CREATE TABLE `user_authentication` (
-  `id` int(11) NOT NULL,
+  `id` varchar(255) NOT NULL,
+  `email` varchar(255) NOT NULL,
   `username` varchar(50) NOT NULL,
   `password` varchar(50) NOT NULL,
   `role` varchar(255) NOT NULL
@@ -213,12 +215,12 @@ CREATE TABLE `user_authentication` (
 -- Dumping data for table `user_authentication`
 --
 
-INSERT INTO `user_authentication` (`id`, `username`, `password`, `role`) VALUES
-(1, 'admin', '80a19f669b02edfbc208a5386ab5036b', 'Platform Admin'),
-(12, 'alamin5991', '443c579704d87bbf273a47aeeb794588', 'School Admin'),
-(13, 'ali', 'c707266b06e583af237abb082a1bbe99', 'School Manager'),
-(14, 'sahali', 'e1bfd7cd5bb0d465f271456e5c1bded7', 'Teacher'),
-(15, 'hadija', 'ce02c38d0fecefab08b0745e404f4993', 'Student');
+INSERT INTO `user_authentication` (`id`, `email`, `username`, `password`, `role`) VALUES
+('1', 'admin@email.com', 'admin', '80a19f669b02edfbc208a5386ab5036b', 'Platform Admin'),
+('12', 'alamin5951@email.com', 'alamin5991', '443c579704d87bbf273a47aeeb794588', 'School Admin'),
+('13', 'ali@gmail.com', 'ali', 'c707266b06e583af237abb082a1bbe99', 'School Manager'),
+('14', 'sahali@gmail.com', 'sahali', 'e1bfd7cd5bb0d465f271456e5c1bded7', 'Teacher'),
+('15', 'hadija@gmail.com', 'hadija', 'ce02c38d0fecefab08b0745e404f4993', 'Student');
 
 --
 -- Indexes for dumped tables
@@ -276,7 +278,8 @@ ALTER TABLE `teacher_registration`
 -- Indexes for table `user_authentication`
 --
 ALTER TABLE `user_authentication`
-  ADD PRIMARY KEY (`id`);
+  ADD PRIMARY KEY (`id`),
+  ADD UNIQUE KEY `email` (`email`);
 
 --
 -- AUTO_INCREMENT for dumped tables
@@ -310,7 +313,7 @@ ALTER TABLE `school_list`
 -- AUTO_INCREMENT for table `score_board`
 --
 ALTER TABLE `score_board`
-  MODIFY `score_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `score_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- AUTO_INCREMENT for table `student_registration`
@@ -323,12 +326,6 @@ ALTER TABLE `student_registration`
 --
 ALTER TABLE `teacher_registration`
   MODIFY `user_id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
-
---
--- AUTO_INCREMENT for table `user_authentication`
---
-ALTER TABLE `user_authentication`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 
 --
 -- Constraints for dumped tables
