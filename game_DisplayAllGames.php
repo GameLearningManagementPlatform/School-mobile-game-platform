@@ -2,9 +2,7 @@
 $title = 'games';
 require 'includes/header.php';
 require 'database/conn.php';
-// $games = $gamesCrud->get_games();
-
-echo "THIS WORKS";
+$games = $gamesCrud->get_games();
 ?>
 
 <div class="container">

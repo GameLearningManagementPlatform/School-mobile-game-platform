@@ -28,7 +28,7 @@
   // $result = $score->verify_API_KEY();
   // echo $result;
   
-  if ($result) {
+  // if ($result) {
     // $score->game_id = $gam;
 
     try {
@@ -50,12 +50,12 @@
     ));
     
     
-  } else {
-    http_response_code(400);
-    echo json_encode(array(
-      "status" => "failed",
-      "message" => "invalid request key"
-    ));
-  }
+  // } else {
+  //   http_response_code(400);
+  //   echo json_encode(array(
+  //     "status" => "failed",
+  //     "message" => "invalid request key"
+  //   ));
+  // }
   
 
