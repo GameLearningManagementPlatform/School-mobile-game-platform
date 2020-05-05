@@ -22,10 +22,10 @@
   $score->start_time = $score_data->startTime;
   $score->end_time = $score_data->endTime;
   $score->score = $score_data->score;
-  $score->API_key = $score_data->API_KEY;
+  // $score->API_key = $score_data->API_KEY;
   
   // $score->game_play_id = $score_data->gamePlayId;
-  $result = $score->verify_API_KEY();
+  // $result = $score->verify_API_KEY();
   // echo $result;
   
   if ($result) {
