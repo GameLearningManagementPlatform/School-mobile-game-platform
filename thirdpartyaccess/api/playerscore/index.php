@@ -36,7 +36,7 @@
   
     } catch (Exception $e) {
       http_response_code(400);
-      echo json_encode(array(
+      return json_encode(array(
         "status" => "failed",
         "message" => $e
       ));
@@ -44,7 +44,7 @@
     }
   
     http_response_code(202);
-    echo json_encode(array(
+    return json_encode(array(
       "status" => "accepted",
       "message" => "user score logged"
     ));
