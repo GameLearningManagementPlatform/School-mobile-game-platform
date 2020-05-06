@@ -43,7 +43,7 @@
       die();
     }
   
-    http_response_code(202);
+    http_response_code(200);
     return json_encode(array(
       "status" => "accepted",
       "message" => "user score logged"
