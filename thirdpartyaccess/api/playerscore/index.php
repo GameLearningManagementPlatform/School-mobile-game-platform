@@ -14,14 +14,25 @@
 
   $score = new GameData($db);
 
-  $score_data = json_decode(file_get_contents('php://input'));
+  $xx = file_get_contents('php://input');
+  $score_data = json_decode($xx);
+  
+  if($score_data) {
 
-  $score->player_id = $score_data->user;
-  $score->game_id = $score_data->id;
-  $score->play_mode = $score_data->playMode; //"individual" of "group"
-  $score->start_time = $score_data->startTime;
-  $score->end_time = $score_data->endTime;
-  $score->score = $score_data->score;
+    $score->player_id = $score_data->user;
+    $score->game_id = $score_data->id;
+    $score->play_mode = $score_data->playMode; //"individual" of "group"
+    $score->start_time = $score_data->startTime;
+    $score->end_time = $score_data->endTime;
+    $score->score = $score_data->score;
+  }
+  else {
+    die(json_encode(array(
+      "status" => "error",
+      "message" => "parameter fields empty"
+    )));
+  }
+
   // $score->API_key = $score_data->API_KEY;
   
   // $score->game_play_id = $score_data->gamePlayId;
@@ -36,15 +47,16 @@
   
     } catch (Exception $e) {
       http_response_code(400);
-      return json_encode(array(
+      echo json_encode(array(
         "status" => "failed",
         "message" => $e
       ));
+      var_dump($xx);
       die();
     }
   
-    http_response_code(200);
-    return json_encode(array(
+    http_response_code(202);
+    echo json_encode(array(
       "status" => "accepted",
       "message" => "user score logged"
     ));

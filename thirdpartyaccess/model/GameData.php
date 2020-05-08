@@ -54,7 +54,7 @@
       }
     
       //Error message
-      printf("Error: ", $stmt->error);
+      // printf("Error: ", $stmt->error);
       return false;
 
     }
