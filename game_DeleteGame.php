@@ -9,7 +9,7 @@ if (!$_GET['id']){
     $results = $gamesCrud->deleteGame($id);
 
     if ($results){
-        header('Location: schoolTeacherViewUsers.php');
+        header('Location: game_viewGames.php');
     }else{
         echo 'error';
     }

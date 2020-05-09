@@ -1,18 +1,18 @@
 <?php
 //the local  machine  environment database connections
-// $host = '127.0.0.1';
-// $db = 'gmlp';
-// $username = 'root';
-// $pass = '';
-// $charset = 'utf8mb4';
+ $host = '127.0.0.1';
+ $db = 'gmlp';
+ $username = 'root';
+ $pass = '';
+ $charset = 'utf8mb4';
 
 //the remote server environment database connections
-$host = 'ol5tz0yvwp930510.cbetxkdyhwsb.us-east-1.rds.amazonaws.com';
+/*$host = 'ol5tz0yvwp930510.cbetxkdyhwsb.us-east-1.rds.amazonaws.com';
 $db = 'tyegkr1szm5vwd8a';
 $username = 'l104kv1o1q6abaz1';
 $pass = 'f938oeksqmcobz70';
 $charset = 'utf8mb4';
-
+*/
 $dsn = "mysql:host=$host;dbname=$db;charset=$charset";
 try {
     $pdo = new PDO($dsn, $username, $pass);

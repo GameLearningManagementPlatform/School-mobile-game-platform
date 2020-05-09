@@ -8,6 +8,8 @@ require_once  'includes/admin_auth.php';
 require_once 'includes/headerPlatformAdmin.php';
 
 
+
+
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     if (isset($_POST['game_name'])) {
         $game_name = $_POST['game_name'];
@@ -15,7 +17,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $game_name = 'A game without a name';
     }
     if (isset($_POST['$game_id'])) {
-        $game_id = $_POST['$game_id'];
+        $game_id = $_POST['game_id'];
     } else {
         $game_id = 'A game without a id';
     }
@@ -126,7 +128,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
                     <div class="form-group">
                         <label for="image" class="control-label">image </label>
-                        <textarea name="image" id="image" class="form-control"></textarea>
+                        <input type="text" name="image" id="image" class="form-control" />
                     </div>
 
                     <button type="submit" class="btn btn-primary btn-block"><span class="glyphicon glyphicon-heart"></span> Add New Game

@@ -1,5 +1,14 @@
 <?php
-$title = 'Edit User';
+$id = '';
+$company_name = '';
+$game_name = '';
+$domain_name = '';
+$student_level = '';
+$description = '';
+$gameurl = '';
+$image = '';
+$title = '';
+$title = 'Edit game';
 require 'includes/header.php';
 require_once 'includes/auth_check.php';
 
@@ -11,57 +20,29 @@ if (!isset($_GET['id'])) {
     $id = $_GET['id'];
     $game = $gamesCrud->getOneGame($id);
 
-
     ?>
-    <?php
-
-    //save data into database
-    if (isset($_POST['submit'])) {
-        //this ID posted from Platform_EditUser will help us update user on its ID reference $id = $_POST['user_id'];
-        $id = $_POST['id'];
-        $company_name = $_POST['company_name'];
-        $game_name = $_POST['game_name'];
-        $domain_name = $_POST['domain_name'];
-        $student_level = $_POST['student_level'];
-        $description = $_POST['description'];
-        $gameurl = $_POST['gameurl'];
-        $image = $_POST['image'];
-
-
-        $result = $gamesCrud->editGame ($id, $company_name, $game_name, $domain_name, $student_level,
-            $description, $gameurl, $image);
-
-        if ($result) {
-            header("Location: game_viewGames.php");
-        } else {
-            echo '<h1>Error</h1>';
-        }
-    } else {
-        echo '<h1>Error</h1>';
-
-    }
-
-
-
-    ?>
-
 
 
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
 
-                <h1 class="bg-warning text-dark">Add new game</h1>
 
-                <form action="game_AddNewGame.php" method="POST">
+                <h1 class="bg-warning text-dark">Update Game <?php   echo $game['game_name'];?></h1>
+
+                <form method="post" action="game_editGamePost.php">
                     <div class="form-group">
                         <label for="company_name" class="control-label">company_name </label>
-                        <input type="text" name="company_name" id="company_name" class="form-control"/>
+                        <input type="text" name="company_name" id="company_name" class="form-control"
+                               value="<?php echo $game['company_name']; ?>"
+                        />
                     </div>
 
                     <div class="form-group">
                         <label for="game_name" class="control-label">game_name</label>
-                        <input type="text" name="game_name" id="game_name" class="form-control"/>
+                        <input type="text" name="game_name" id="game_name" class="form-control"
+                               value="<?php echo $game['game_name']; ?>"
+                        />
                     </div>
                     <div class="form-group">
                         <label for="domain_name">domain_name (Choose from list)</label>
@@ -94,19 +75,21 @@ if (!isset($_GET['id'])) {
                     </div>
                     <div class="form-group">
                         <label for="description" class="control-label">description</label>
-                        <input type="text" name="description" id="description" class="form-control"/>
+                        <input type="text" name="description" id="description" class="form-control"
+                               value="<?php echo $game['description']; ?>"
+                        />
                     </div>
                     <div class="form-group">
                         <label for="gameurl" class="control-label">Game URL </label>
-                        <input type="text" name="gameurl" id="gameurl" class="form-control"/>
+                        <input type="text" name="gameurl" id="gameurl" class="form-control" value="<?php echo $game['gameurl']; ?>"/>
                     </div>
 
                     <div class="form-group">
                         <label for="image" class="control-label">image </label>
-                        <textarea name="image" id="image" class="form-control"></textarea>
+                        <input type="text" name="image" id="image" class="form-control"  value="<?php echo $game['image']; ?>"/>
                     </div>
 
-                    <button type="submit" class="btn btn-primary btn-block"><span class="glyphicon glyphicon-heart"></span> Add New Game
+                    <button type="submit" class="btn btn-primary btn-block"><span class="glyphicon glyphicon-heart"></span> Update Game
                     </button>
                 </form>
 
@@ -115,6 +98,5 @@ if (!isset($_GET['id'])) {
     </div>
     <br>
     <br>
-
 <?php } ?>
 <?php require 'includes/footer.php';

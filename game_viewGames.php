@@ -1,6 +1,6 @@
 <?php
 
-$title = 'view users';
+$title = 'view games';
 require 'includes/header.php';
 require_once 'includes/auth_check.php';
 require 'database/conn.php';
@@ -21,6 +21,7 @@ $result = $gamesCrud->get_games();
             <th>student_level</th>
             <th>description</th>
             <th>gameurl</th>
+            <th>view</th>
             <th>edit</th>
             <th>delete</th>
         </tr>
@@ -36,6 +37,8 @@ $result = $gamesCrud->get_games();
                 <td> <?php echo $row['description']; ?></td>
                 <td> <?php echo $row['gameurl']; ?></td>
 
+                <td><a href="game_viewGame.php?id=<?php echo $row['game_id']; ?>"
+                       class="btn btn-primary">View</a></td>
                 <td><a href="game_editGame.php?id=<?php echo $row['game_id']; ?>" class="btn btn-info">Edit</a>
                 </td>
                 <td><a onclick="return confirm('Are you sure you want to delete this record?');" href="game_DeleteGame.php?id=<?php echo $row['game_id']; ?>" class="btn btn-danger">Delete</a>
