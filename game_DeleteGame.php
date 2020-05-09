@@ -1,5 +1,6 @@
 <?php
-require_once 'includes/auth_check.php';
+require_once  'includes/admin_auth.php';
+
 
 require_once 'database/conn.php';
 if (!$_GET['id']){
