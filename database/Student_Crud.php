@@ -122,4 +122,36 @@ class Student_Crud
             return false;
         }
     }
+
+    public function getCurrentStudentScore($email){
+        try {
+            $sql = 'SELECT a.* , g.game_name, s.schoolname, st.*
+            FROM score_board a, game_registration g, school_list s, student_registration st
+            WHERE a.player_id = (
+                SELECT user_id 
+                FROM student_registration 
+                WHERE email = :email)
+            AND s.school_id = (
+                SELECT school_id 
+                FROM student_registration 
+                WHERE email = :email)
+            AND a.game_id = g.game_id 
+            AND st.email = :email
+            ORDER BY a.score_id DESC LIMIT 1';
+
+            $stmt = $this->db->prepare($sql);
+            // bind all placeholders to the actual values
+            $stmt->bindParam(':email', $email);
+            $stmt->execute();
+            
+            
+            $result = $stmt->fetch();
+            return $result;
+
+        } catch (PDOException $exception) {
+            echo $exception->getMessage();
+            return false;
+        }
+    }
+
 }

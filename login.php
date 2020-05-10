@@ -11,13 +11,14 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
     $new_password = md5($password.$username);
 
 
-    $result =$user_authentication->getUser($role,$username,$new_password) ;
+    $result = $user_authentication->getUser($role,$username,$new_password) ;
 
     if(!$result  ){
         echo '<div class="alert alert-danger">Username or Password is incorrect! Please try again. </div>';
     }else{
         $_SESSION['username'] = $username;
         $_SESSION['userid'] = $result['id'];
+        $_SESSION['email'] = $result['email'];
 
         //using an if statement to route  user according to the  role he plays in webapp to view their functions
        //get the session role that has been posted
