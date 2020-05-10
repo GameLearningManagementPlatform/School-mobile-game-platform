@@ -12,10 +12,11 @@ require_once 'includes/auth_check.php';
             <h5 class="card-title"><?php echo $result['firstname'] . "\t" . $result['secondname']; ?></h5>
             <h6 class="card-subtitle mb-2 text-muted"><?php echo $result['role']; ?></h6>
             <p class="card-text">Email:<?php echo $result['email']; ?></p>
-            <p class="card-text">Phone Number:<?php echo $result['phonenumber']; ?></p>
-            <p class="card-text">School ID:<?php echo $result['school_id']; ?></p>
-            <p class="card-text">School Name:<?php echo $result['schoolname']; ?></p>
-            <p class="card-text">School Address:<?php echo $result['schooladdress']; ?></p>
+            <p class="card-text">School ID:<?php echo $result['schoolname']; ?></p>
+            <p class="card-text">School Name:<?php echo $result['game_name'] . "\t" . $result['play_mode']; ?></p>
+            <p class="card-text">School Address:<?php echo $result['score']; ?></p>
+            <p class="card-text">School Name:<?php echo $result['start_time']; ?></p>
+            <p class="card-text">School Address:<?php echo $result['end_time']; ?></p>
             <p>
                 <a href="schoolManagerSchoolAdminViewUsers.php?id=<?php echo $result['user_id']; ?>"
                    class="btn btn-primary"> Users</a>

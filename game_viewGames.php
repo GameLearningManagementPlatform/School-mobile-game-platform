@@ -10,7 +10,9 @@ $result = $gamesCrud->get_games();
 ?>
 
 
+
     <table class="table container">
+
         <thead class="thead-dark">
         <tr>
             <th> ID</th>
@@ -41,7 +43,8 @@ $result = $gamesCrud->get_games();
                        class="btn btn-primary">View</a></td>
                 <td><a href="game_editGame.php?id=<?php echo $row['game_id']; ?>" class="btn btn-info">Edit</a>
                 </td>
-                <td><a onclick="return confirm('Are you sure you want to delete this record?');" href="game_DeleteGame.php?id=<?php echo $row['game_id']; ?>" class="btn btn-danger">Delete</a>
+                <td><a onclick="return confirm('Are you sure you want to delete this record?');"
+                       href="game_DeleteGame.php?id=<?php echo $row['game_id']; ?>" class="btn btn-danger">Delete</a>
                 </td>
             </tr>
 
