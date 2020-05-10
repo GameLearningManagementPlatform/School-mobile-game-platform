@@ -122,6 +122,32 @@ class Student_Crud
             return false;
         }
     }
+    
+    public function getStudentId($id) {
+
+        try {
+            $sql = 'SELECT user_id 
+            FROM student_registration 
+            WHERE email =  (
+                SELECT email
+                FROM user_authentication 
+                WHERE id = 15 ) LIMIT 1';
+            
+            $stmt = $this->db->prepare($sql);
+            // bind all placeholders to the actual values
+            $stmt->bindParam(':id', $id);
+            $stmt->execute();
+            
+            
+            $result = $stmt->fetch();
+            return $result;
+            
+        } catch (PDOException $exception) {
+            echo $exception->getMessage();
+            return false;
+        }
+
+    }
 
     public function getCurrentStudentScore($email){
         try {

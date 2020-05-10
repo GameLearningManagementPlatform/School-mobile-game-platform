@@ -7,6 +7,8 @@ require_once 'includes/auth_check.php';
 
 
 $id = $_GET['id'];
+$studentId = $Student_Crud->getStudentId($_SESSION['userid']);
+
 
 $result = $gamesCrud->getOneGame($id);
 ?>
@@ -43,7 +45,7 @@ $result = $gamesCrud->getOneGame($id);
                     <a href="<?php echo $result['gameurl']; ?> " target="_blank"
                        class="btn btn-primary"> Download Game</a>
 
-                    <a href="<?php echo $result['gameurl'].'?id='.$result['game_id'].'&user='.$_SESSION['userid'] ?>" target="_blank";
+                    <a href="<?php echo $result['gameurl'].'?id='.$result['game_id'].'&user='.$studentId['user_id'] ?>" target="_blank";
                        class="btn btn-dark">Play Individually</a>
 
                     <a href=""
