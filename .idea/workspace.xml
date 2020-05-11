@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9313587e-543b-4675-af75-c132ba7c2fbc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LineGraph.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php-Game-tracker-master.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php-Game-tracker-master.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LineGraph.php" beforeDir="false" afterPath="$PROJECT_DIR$/LineGraph.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myactivity.php" beforeDir="false" afterPath="$PROJECT_DIR$/myactivity.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mygrades.php" beforeDir="false" afterPath="$PROJECT_DIR$/mygrades.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -101,7 +99,7 @@
       <workItem from="1586487932299" duration="51406000" />
       <workItem from="1586847944628" duration="59004000" />
       <workItem from="1588076940665" duration="125000" />
-      <workItem from="1588986792258" duration="27282000" />
+      <workItem from="1588986792258" duration="27754000" />
     </task>
     <servers />
   </component>
