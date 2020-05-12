@@ -6,12 +6,12 @@
 
         function drawChart() {
             var data = google.visualization.arrayToDataTable([
-                ['date', 'scores'],
+                ['end_time', 'scores'],
                 <?php
                 $date = $result['end_time'];
                 $score = $result['score'];
                 ?>
-                ['<?php echo $date?>', '<?php echo $score?>']
+                ['<?php echo $date;?>', '<?php echo $score;?>']
             ]);
 
             var options = {
