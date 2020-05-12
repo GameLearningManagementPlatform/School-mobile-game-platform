@@ -33,7 +33,7 @@
       $stmt = $this->conn->prepare($query);
 
       // clean data
-      $this->player_id = htmlspecialchars(strip_tags($this->player_id));
+        $this->player_id = htmlspecialchars(strip_tags($this->player_id));
       $this->game_id = htmlspecialchars(strip_tags($this->game_id));
       $this->play_mode = htmlspecialchars(strip_tags($this->play_mode));
       $this->start_time = htmlspecialchars(strip_tags($this->start_time));

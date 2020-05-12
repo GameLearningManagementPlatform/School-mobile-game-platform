@@ -6,7 +6,7 @@ require 'database/conn.php';
 
     <div id="wrap">
         <div id="main" class="container clear-top">
-            <h1>Registration for the school</h1>
+            <h1><?php echo  $title?></h1>
             <form method="post" action="successStudent.php">
                 <div class="form-group">
                     <label for="firstname">First Name</label>

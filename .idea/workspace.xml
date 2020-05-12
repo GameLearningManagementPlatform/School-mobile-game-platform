@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9313587e-543b-4675-af75-c132ba7c2fbc" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/myactivity.php" beforeDir="false" afterPath="$PROJECT_DIR$/myactivity.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thirdpartyaccess/model/GameData.php" beforeDir="false" afterPath="$PROJECT_DIR$/thirdpartyaccess/model/GameData.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -10,7 +12,7 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution>
       <executable />
@@ -97,7 +99,8 @@
       <workItem from="1586487932299" duration="51406000" />
       <workItem from="1586847944628" duration="59004000" />
       <workItem from="1588076940665" duration="125000" />
-      <workItem from="1588986792258" duration="39097000" />
+      <workItem from="1588986792258" duration="39985000" />
+      <workItem from="1589321899177" duration="1943000" />
     </task>
     <servers />
   </component>
