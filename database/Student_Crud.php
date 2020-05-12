@@ -179,5 +179,17 @@ class Student_Crud
             return false;
         }
     }
+    function  getAllScores(){
+
+        try {
+            $sql = "SELECT * FROM `score_board`";
+            $result = $this->db->query($sql);
+            return $result;
+        } catch (PDOException $e) {
+            echo $e->getMessage();
+            return false;
+        }
+
+    }
 
 }
