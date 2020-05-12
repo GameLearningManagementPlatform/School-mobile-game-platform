@@ -179,17 +179,19 @@ class Student_Crud
             return false;
         }
     }
-    function  getAllScores(){
+    function  getAllScores($email){
 
         try {
-            $sql = "SELECT * FROM `score_board`";
-            $result = $this->db->query($sql);
+            $sql = "SELECT * FROM `score_board` WHERE email = :email";
+            $stmt = $this->db->prepare($sql);
+            $stmt->bindparam(':email', $email);
+            $stmt->execute();
+            $result = $stmt->fetch();
             return $result;
         } catch (PDOException $e) {
             echo $e->getMessage();
             return false;
         }
-
     }
 
 }
