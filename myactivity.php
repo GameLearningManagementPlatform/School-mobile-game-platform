@@ -11,9 +11,9 @@ require_once 'includes/Teacher_Auth.php';
 
 $result = $Student_Crud->getAllScores();
  $row = $result->fetch(PDO::FETCH_ASSOC);
- $player_id = $row['player_id'];  
+ $player_id = $row['player_id'];
  $score = $row['score'];
- var_dump($player_id);die;
+ echo $player_id;die;
 
 ?>
 
