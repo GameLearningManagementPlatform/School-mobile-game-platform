@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9313587e-543b-4675-af75-c132ba7c2fbc" name="Default Changelist" comment="" />
+    <list default="true" id="9313587e-543b-4675-af75-c132ba7c2fbc" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/includes/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myactivity.php" beforeDir="false" afterPath="$PROJECT_DIR$/myactivity.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myprofile.php" beforeDir="false" afterPath="$PROJECT_DIR$/viewAllGrades.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.php" beforeDir="false" afterPath="$PROJECT_DIR$/test.php" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,7 +101,7 @@
       <workItem from="1586487932299" duration="51406000" />
       <workItem from="1586847944628" duration="59004000" />
       <workItem from="1588076940665" duration="125000" />
-      <workItem from="1588986792258" duration="35667000" />
+      <workItem from="1588986792258" duration="36388000" />
     </task>
     <servers />
   </component>

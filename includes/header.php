@@ -39,9 +39,9 @@ require_once 'session.php';
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <a class="dropdown-item" href="./mygrades.php">Grades</a>
-                        <a class="dropdown-item" href="./myprofile.php">My Profile</a>
+                        <a class="dropdown-item" href="./viewAllGrades.php">View All Grades</a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="./myactivity.php">Activity</a>
+                        <a class="dropdown-item" href="./myactivity.php">Student Activity Graph</a>
 
                     </div>
                 </li>
