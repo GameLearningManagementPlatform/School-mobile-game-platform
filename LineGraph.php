@@ -1,26 +1,17 @@
-<?php
-$title = 'Student grades';
-
-require_once 'includes/header.php';
-require_once 'database/conn.php';
-require_once 'includes/auth_check.php';
-
-$result = $Student_Crud->getCurrentStudentScore($_SESSION['email']);
-
-?>
+<html>
+<head>
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <script type="text/javascript">
         google.charts.load('current', {'packages':['corechart']});
         google.charts.setOnLoadCallback(drawChart);
 
         function drawChart() {
-            var data = google.visualization.DataTable([
-                ['end_time', 'scores'],
-                <?php
-                $date = $result['end_time'];
-                $score = $result['score'];
-                ?>
-                ['<?php echo $date;?>', '<?php echo $score;?>']
+            var data = google.visualization.arrayToDataTable([
+                ['Year', 'Sales', 'Expenses'],
+                ['2004',  1000,      400],
+                ['2005',  1170,      460],
+                ['2006',  660,       1120],
+                ['2007',  1030,      540]
             ]);
 
             var options = {
@@ -34,7 +25,8 @@ $result = $Student_Crud->getCurrentStudentScore($_SESSION['email']);
             chart.draw(data, options);
         }
     </script>
+</head>
 <body>
 <div id="curve_chart" style="width: 900px; height: 500px"></div>
 </body>
-
+</html>
