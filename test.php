@@ -1,10 +1,5 @@
 <?php
 
-$title = 'view users';
-require 'includes/header.php';
-require_once 'includes/auth_check.php';
-require 'database/conn.php';
-
 $result = $Student_Crud->getAllScores();
 ?>
 
@@ -23,4 +18,3 @@ $result = $Student_Crud->getAllScores();
         <?php endwhile; ?>
     </table>
 
-<?php require 'includes/footer.php' ?>
