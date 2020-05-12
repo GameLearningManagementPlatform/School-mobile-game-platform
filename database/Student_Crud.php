@@ -179,12 +179,12 @@ class Student_Crud
             return false;
         }
     }
-    function  getAllScores($email){
+    function  getAllScores($id){
 
         try {
-            $sql = "SELECT * FROM `score_board` WHERE email = :email";
+            $sql = "SELECT * FROM `score_board` WHERE player_id = :player_id";
             $stmt = $this->db->prepare($sql);
-            $stmt->bindparam(':email', $email);
+            $stmt->bindparam(':player_id', $id);
             $stmt->execute();
             $result = $stmt->fetch();
             return $result;
