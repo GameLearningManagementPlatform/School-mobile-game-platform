@@ -1,6 +1,6 @@
 <?php
 
-$result = $Student_Crud->getAllScores($_SESSION['email']);
+$result = $Student_Crud->getAllScores();
 ?>
 
 
@@ -13,7 +13,7 @@ $result = $Student_Crud->getAllScores($_SESSION['email']);
         </thead>
         <?php while ($row = $result->fetch(PDO::FETCH_ASSOC)): ?>
             <tr>
-                <td> <?php echo $row['player_id']; ?></td>
+                <td> <?php echo $_SESSION['email']; ?></td>
 
                 <td> <?php echo $row['score']; ?></td>
             </tr>
