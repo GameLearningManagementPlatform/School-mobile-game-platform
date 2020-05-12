@@ -10,6 +10,11 @@ require_once 'includes/Teacher_Auth.php';
 
 
 $result = $Student_Crud->getAllScores();
+
+$player_id = $result['player_id'];
+$score = $result['score'];
+
+var_dump($player_id);die;
 ?>
 
 
@@ -23,11 +28,7 @@ $result = $Student_Crud->getAllScores();
                 var data = google.visualization.arrayToDataTable([
 
                     ['player_id', 'score'],
-                    <?php
-                        $player_id = $result['player_id'];
-                        $score = $result['score'];
 
-                    ?>
                     ['<?php echo $player_id?>',  <?php echo $score?>]
 
                 ]);
