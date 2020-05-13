@@ -1,1 +1,1 @@
-web app to connect games which allow students to play individually or as a group. Their scores are used in the site to show top grades, top group competitor. To test the app, on login choose role as student. On username write hadija  password write 123  click on games https://gmlp.herokuapp.com/game_DisplayAllGames.php and choose multiplicationgame and play. Once finished playing view your marks on  under mydashboard  https://gmlp.herokuapp.com/mygrades.php
+MOBILE_GAME_MANAGEMENT_PLATFORM
